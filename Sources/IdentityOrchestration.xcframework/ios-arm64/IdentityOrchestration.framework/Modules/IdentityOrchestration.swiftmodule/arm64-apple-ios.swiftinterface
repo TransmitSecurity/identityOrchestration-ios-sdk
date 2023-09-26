@@ -92,32 +92,6 @@ public protocol IdoServiceResponse {
   var journeyStepId: IdentityOrchestration.IdoJourneyActionType? { get }
   var clientResponseOptions: [Swift.String : any IdentityOrchestration.ClientResponseOption]? { get }
 }
-public struct JSONCodingKeys : Swift.CodingKey {
-  public var stringValue: Swift.String
-  public init(stringValue: Swift.String)
-  public var intValue: Swift.Int?
-  public init?(intValue: Swift.Int)
-}
-extension Swift.KeyedDecodingContainer {
-  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
-  public func decode(_ type: Swift.Array<Any>.Type, forKey key: K) throws -> Swift.Array<Any>
-  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
-}
-extension Swift.UnkeyedDecodingContainer {
-  public mutating func decode(_ type: Swift.Array<Any>.Type) throws -> Swift.Array<Any>
-  public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
-}
-extension Swift.KeyedEncodingContainerProtocol where Self.Key == IdentityOrchestration.JSONCodingKeys {
-  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
-}
-extension Swift.KeyedEncodingContainerProtocol {
-  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>?, forKey key: Self.Key) throws
-  public mutating func encode(_ value: Swift.Array<Any>?, forKey key: Self.Key) throws
-}
-extension Swift.UnkeyedEncodingContainer {
-  public mutating func encode(_ value: Swift.Array<Any>) throws
-  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
-}
 public protocol TSIdentityOrchestrationDelegate : AnyObject {
   func identityOrchestrationDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.IdoServiceResponse, IdentityOrchestration.IdoJourneyError>)
 }

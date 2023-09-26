@@ -2562,307 +2562,6 @@
         "moduleName": "IdentityOrchestration"
       },
       {
-        "kind": "TypeDecl",
-        "name": "JSONCodingKeys",
-        "printedName": "JSONCodingKeys",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "stringValue",
-            "printedName": "stringValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:21IdentityOrchestration14JSONCodingKeysV11stringValueSSvp",
-            "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV11stringValueSSvp",
-            "moduleName": "IdentityOrchestration",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration14JSONCodingKeysV11stringValueSSvg",
-                "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV11stringValueSSvg",
-                "moduleName": "IdentityOrchestration",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration14JSONCodingKeysV11stringValueSSvs",
-                "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV11stringValueSSvs",
-                "moduleName": "IdentityOrchestration",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration14JSONCodingKeysV11stringValueSSvM",
-                "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV11stringValueSSvM",
-                "moduleName": "IdentityOrchestration",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(stringValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "JSONCodingKeys",
-                "printedName": "IdentityOrchestration.JSONCodingKeys",
-                "usr": "s:21IdentityOrchestration14JSONCodingKeysV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21IdentityOrchestration14JSONCodingKeysV11stringValueACSS_tcfc",
-            "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV11stringValueACSS_tcfc",
-            "moduleName": "IdentityOrchestration",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "intValue",
-            "printedName": "intValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvp",
-            "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvp",
-            "moduleName": "IdentityOrchestration",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvg",
-                "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvg",
-                "moduleName": "IdentityOrchestration",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvs",
-                "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvs",
-                "moduleName": "IdentityOrchestration",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvM",
-                "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV8intValueSiSgvM",
-                "moduleName": "IdentityOrchestration",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(intValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "IdentityOrchestration.JSONCodingKeys?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "JSONCodingKeys",
-                    "printedName": "IdentityOrchestration.JSONCodingKeys",
-                    "usr": "s:21IdentityOrchestration14JSONCodingKeysV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21IdentityOrchestration14JSONCodingKeysV8intValueACSgSi_tcfc",
-            "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV8intValueACSgSi_tcfc",
-            "moduleName": "IdentityOrchestration",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:21IdentityOrchestration14JSONCodingKeysV",
-        "mangledName": "$s21IdentityOrchestration14JSONCodingKeysV",
-        "moduleName": "IdentityOrchestration",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "CodingKey",
-            "printedName": "CodingKey",
-            "usr": "s:s9CodingKeyP",
-            "mangledName": "$ss9CodingKeyP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3308,607 +3007,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KeyedDecodingContainer",
-        "printedName": "KeyedDecodingContainer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Swift.String : Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s22KeyedDecodingContainerV21IdentityOrchestrationE6decode_6forKeySDySSypGAFm_xtKF",
-            "mangledName": "$ss22KeyedDecodingContainerV21IdentityOrchestrationE6decode_6forKeySDySSypGAFm_xtKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<K where K : Swift.CodingKey>",
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s22KeyedDecodingContainerV21IdentityOrchestrationE6decode_6forKeySayypGAFm_xtKF",
-            "mangledName": "$ss22KeyedDecodingContainerV21IdentityOrchestrationE6decode_6forKeySayypGAFm_xtKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<K where K : Swift.CodingKey>",
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Swift.String : Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s22KeyedDecodingContainerV21IdentityOrchestrationE6decodeySDySSypGAEmKF",
-            "mangledName": "$ss22KeyedDecodingContainerV21IdentityOrchestrationE6decodeySDySSypGAEmKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<K where K : Swift.CodingKey>",
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:s22KeyedDecodingContainerV",
-        "mangledName": "$ss22KeyedDecodingContainerV",
-        "moduleName": "Swift",
-        "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-        "sugared_genericSig": "<K where K : Swift.CodingKey>",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "KeyedDecodingContainerProtocol",
-            "printedName": "KeyedDecodingContainerProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Key",
-                "printedName": "Key",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s30KeyedDecodingContainerProtocolP",
-            "mangledName": "$ss30KeyedDecodingContainerProtocolP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnkeyedDecodingContainer",
-        "printedName": "UnkeyedDecodingContainer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedDecodingContainerP21IdentityOrchestrationE6decodeySayypGAEmKF",
-            "mangledName": "$ss24UnkeyedDecodingContainerP21IdentityOrchestrationE6decodeySayypGAEmKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedDecodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedDecodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Swift.String : Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedDecodingContainerP21IdentityOrchestrationE6decodeySDySSypGAEmKF",
-            "mangledName": "$ss24UnkeyedDecodingContainerP21IdentityOrchestrationE6decodeySDySSypGAEmKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedDecodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedDecodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:s24UnkeyedDecodingContainerP",
-        "mangledName": "$ss24UnkeyedDecodingContainerP",
-        "moduleName": "Swift",
-        "isExternal": true
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KeyedEncodingContainerProtocol",
-        "printedName": "KeyedEncodingContainerProtocol",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s30KeyedEncodingContainerProtocolP21IdentityOrchestrationAC14JSONCodingKeysV3KeyRtzrlE6encodeyySDySSypGKF",
-            "mangledName": "$ss30KeyedEncodingContainerProtocolP21IdentityOrchestrationAC14JSONCodingKeysV3KeyRtzrlE6encodeyySDySSypGKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol, τ_0_0.Key == IdentityOrchestration.JSONCodingKeys>",
-            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol, Self.Key == IdentityOrchestration.JSONCodingKeys>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.Key"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s30KeyedEncodingContainerProtocolP21IdentityOrchestrationE6encode_6forKeyySDySSypGSg_0I0QztKF",
-            "mangledName": "$ss30KeyedEncodingContainerProtocolP21IdentityOrchestrationE6encode_6forKeyySDySSypGSg_0I0QztKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol>",
-            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.Key"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s30KeyedEncodingContainerProtocolP21IdentityOrchestrationE6encode_6forKeyySayypGSg_0I0QztKF",
-            "mangledName": "$ss30KeyedEncodingContainerProtocolP21IdentityOrchestrationE6encode_6forKeyySayypGSg_0I0QztKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol>",
-            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:s30KeyedEncodingContainerProtocolP",
-        "mangledName": "$ss30KeyedEncodingContainerProtocolP",
-        "moduleName": "Swift",
-        "genericSig": "<τ_0_0.Key : Swift.CodingKey>",
-        "sugared_genericSig": "<Self.Key : Swift.CodingKey>",
-        "isExternal": true
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnkeyedEncodingContainer",
-        "printedName": "UnkeyedEncodingContainer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedEncodingContainerP21IdentityOrchestrationE6encodeyySayypGKF",
-            "mangledName": "$ss24UnkeyedEncodingContainerP21IdentityOrchestrationE6encodeyySayypGKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedEncodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedEncodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedEncodingContainerP21IdentityOrchestrationE6encodeyySDySSypGKF",
-            "mangledName": "$ss24UnkeyedEncodingContainerP21IdentityOrchestrationE6encodeyySDySSypGKF",
-            "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedEncodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedEncodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:s24UnkeyedEncodingContainerP",
-        "mangledName": "$ss24UnkeyedEncodingContainerP",
-        "moduleName": "Swift",
-        "isExternal": true
       }
     ],
     "json_format_version": 8
@@ -4855,420 +3953,420 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 2174,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2220,
+      "offset": 2215,
       "length": 15,
       "value": "\"error_message\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2297,
+      "offset": 2292,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 2174,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2220,
+      "offset": 2215,
       "length": 15,
       "value": "\"error_message\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2297,
+      "offset": 2292,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2388,
       "length": 10,
       "value": "\"app_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2452,
+      "offset": 2447,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2528,
+      "offset": 2523,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2388,
       "length": 10,
       "value": "\"app_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2452,
+      "offset": 2447,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2528,
+      "offset": 2523,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2864,
+      "offset": 2859,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2905,
+      "offset": 2900,
       "length": 12,
       "value": "\"session_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2864,
+      "offset": 2859,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2905,
+      "offset": 2900,
       "length": 12,
       "value": "\"session_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3417,
+      "offset": 3412,
       "length": 17,
       "value": "\"wait_for_ticket\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3485,
+      "offset": 3480,
       "length": 29,
       "value": "\"crypto_binding_registration\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3550,
+      "offset": 3545,
       "length": 13,
       "value": "\"debug_break\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3417,
+      "offset": 3412,
       "length": 17,
       "value": "\"wait_for_ticket\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3485,
+      "offset": 3480,
       "length": 29,
       "value": "\"crypto_binding_registration\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3550,
+      "offset": 3545,
       "length": 13,
       "value": "\"debug_break\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5995,
+      "offset": 5990,
       "length": 10,
       "value": "\"app_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6062,
+      "offset": 6057,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6150,
+      "offset": 6145,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6186,
+      "offset": 6181,
       "length": 11,
       "value": "\"ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6229,
+      "offset": 6224,
       "length": 15,
       "value": "\"raw_ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6279,
+      "offset": 6274,
       "length": 17,
       "value": "\"polling_timeout\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5995,
+      "offset": 5990,
       "length": 10,
       "value": "\"app_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6062,
+      "offset": 6057,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6150,
+      "offset": 6145,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6186,
+      "offset": 6181,
       "length": 11,
       "value": "\"ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6229,
+      "offset": 6224,
       "length": 15,
       "value": "\"raw_ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6279,
+      "offset": 6274,
       "length": 17,
       "value": "\"polling_timeout\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 7732,
+      "offset": 7727,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9035,
+      "offset": 9030,
       "length": 11,
       "value": "\"json_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9101,
+      "offset": 9096,
       "length": 14,
       "value": "\"control_flow\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9154,
+      "offset": 9149,
       "length": 21,
       "value": "\"assertions_complete\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9214,
+      "offset": 9209,
       "length": 22,
       "value": "\"assertion_error_code\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9278,
+      "offset": 9273,
       "length": 25,
       "value": "\"assertion_error_message\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9337,
+      "offset": 9332,
       "length": 16,
       "value": "\"rejection_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9385,
+      "offset": 9380,
       "length": 14,
       "value": "\"failure_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9434,
+      "offset": 9429,
       "length": 17,
       "value": "\"change_detected\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9035,
+      "offset": 9030,
       "length": 11,
       "value": "\"json_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9101,
+      "offset": 9096,
       "length": 14,
       "value": "\"control_flow\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9154,
+      "offset": 9149,
       "length": 21,
       "value": "\"assertions_complete\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9214,
+      "offset": 9209,
       "length": 22,
       "value": "\"assertion_error_code\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9278,
+      "offset": 9273,
       "length": 25,
       "value": "\"assertion_error_message\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9337,
+      "offset": 9332,
       "length": 16,
       "value": "\"rejection_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9385,
+      "offset": 9380,
       "length": 14,
       "value": "\"failure_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9434,
+      "offset": 9429,
       "length": 17,
       "value": "\"change_detected\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9733,
+      "offset": 9728,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9733,
+      "offset": 9728,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/CodingExtention.swift",
       "kind": "StringLiteral",
-      "offset": 291,
+      "offset": 284,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/CodingExtention.swift",
       "kind": "StringLiteral",
-      "offset": 303,
+      "offset": 296,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/CodingExtention.swift",
       "kind": "Array",
-      "offset": 2076,
+      "offset": 2055,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/CodingExtention.swift",
       "kind": "BooleanLiteral",
-      "offset": 2104,
+      "offset": 2083,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/CodingExtention.swift",
       "kind": "StringLiteral",
-      "offset": 4054,
+      "offset": 4026,
       "length": 20,
       "value": "\"Invalid JSON value\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/CodingExtention.swift",
       "kind": "Array",
-      "offset": 5529,
+      "offset": 5487,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/CodingExtention.swift",
       "kind": "StringLiteral",
-      "offset": 5659,
+      "offset": 5617,
       "length": 20,
       "value": "\"Invalid JSON value\""
     },
