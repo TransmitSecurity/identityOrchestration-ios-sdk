@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     #
   
     spec.name         = "IdentityOrchestration"
-    spec.version      = "0.0.2"
+    spec.version      = "0.0.3"
     spec.summary      = "The Identity Orchestration SDK is a client-side JavaScript SDK that allows you to communicate with the Orchestration server, run journeys, and submit client input. Contact your Transmit representative to learn more about our orchestration capabilities."
     spec.homepage     = "https://www.transmitsecurity.co.il"
   
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
     #   * Write the description between the DESC delimiters below.
     #   * Finally, don't worry about the indent, CocoaPods strips it!
     spec.description  = <<-DESC
-                    
+                        The Identity Orchestration SDK is a client-side JavaScript SDK that allows you to communicate with the Orchestration server, run journeys, and submit client input. Contact your Transmit representative to learn more about our orchestration capabilities.
                      DESC
   
     # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
