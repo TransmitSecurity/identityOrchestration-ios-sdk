@@ -1,0 +1,11 @@
+framework module IdentityOrchestration {
+  umbrella header "IdentityOrchestration.h"
+
+  export *
+  module * { export * }
+}
+
+module IdentityOrchestration.Swift {
+  header "IdentityOrchestration-Swift.h"
+  requires objc
+}

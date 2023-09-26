@@ -1,0 +1,137 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IdentityOrchestration
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import Foundation
+@_exported import IdentityOrchestration
+import Swift
+import TSCoreSDK
+import UIKit
+import _Concurrency
+import _StringProcessing
+import zlib
+public struct IdoInitJourneyOptions {
+  public init(serverPath: Swift.String, applicationId: Swift.String)
+}
+public struct IdoStartJourneyOptions {
+  public init(additionalParams: [Swift.String : Any]?, flowId: Swift.String? = nil)
+}
+public enum IdoJourneyError : Swift.Error, Swift.Decodable {
+  case notInitialized
+  case noActiveJourney
+  case hasActiveJourney
+  case networkError
+  case clientResponseNotValid
+  case serverError
+  public static func == (a: IdentityOrchestration.IdoJourneyError, b: IdentityOrchestration.IdoJourneyError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum IdoServiceResponseType : Swift.Codable {
+  case journeySuccess
+  case clientInputRequired
+  case clientInputUpdateRequired
+  case journeyRejection
+  public static func == (a: IdentityOrchestration.IdoServiceResponseType, b: IdentityOrchestration.IdoServiceResponseType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension IdentityOrchestration.ClientResponseOptionType {
+  public var id: Swift.String {
+    get
+  }
+}
+extension IdentityOrchestration.ClientResponseOptionType : Swift.Equatable {
+  public static func == (lhs: IdentityOrchestration.ClientResponseOptionType, rhs: IdentityOrchestration.ClientResponseOptionType) -> Swift.Bool
+}
+public enum ClientResponseOptionType : Swift.Codable {
+  case clientInput
+  case cancel
+  case custom(id: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension IdentityOrchestration.IdoJourneyActionType : Swift.CustomStringConvertible, Swift.Equatable {
+  public var description: Swift.String {
+    get
+  }
+}
+extension IdentityOrchestration.IdoJourneyActionType : Swift.RawRepresentable {
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum IdoJourneyActionType : Swift.Codable {
+  case rejection
+  case information
+  case debugBreak
+  case waitForAnotherDevice
+  case cryptoBindingRegistration
+  case cryptoBindingValidation
+  case custom(name: Swift.String)
+}
+public protocol ClientResponseOption : Swift.Decodable, Swift.Encodable {
+  var type: IdentityOrchestration.ClientResponseOptionType { get }
+  var id: Swift.String { get }
+  var label: Swift.String { get }
+}
+public protocol IdoServiceResponse {
+  var type: IdentityOrchestration.IdoServiceResponseType { get }
+  var rejectionReason: Swift.String? { get }
+  var data: [Swift.String : Any]? { get }
+  var journeyStepId: IdentityOrchestration.IdoJourneyActionType? { get }
+  var clientResponseOptions: [Swift.String : any IdentityOrchestration.ClientResponseOption]? { get }
+}
+public struct JSONCodingKeys : Swift.CodingKey {
+  public var stringValue: Swift.String
+  public init(stringValue: Swift.String)
+  public var intValue: Swift.Int?
+  public init?(intValue: Swift.Int)
+}
+extension Swift.KeyedDecodingContainer {
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
+  public func decode(_ type: Swift.Array<Any>.Type, forKey key: K) throws -> Swift.Array<Any>
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+}
+extension Swift.UnkeyedDecodingContainer {
+  public mutating func decode(_ type: Swift.Array<Any>.Type) throws -> Swift.Array<Any>
+  public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+}
+extension Swift.KeyedEncodingContainerProtocol where Self.Key == IdentityOrchestration.JSONCodingKeys {
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+extension Swift.KeyedEncodingContainerProtocol {
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>?, forKey key: Self.Key) throws
+  public mutating func encode(_ value: Swift.Array<Any>?, forKey key: Self.Key) throws
+}
+extension Swift.UnkeyedEncodingContainer {
+  public mutating func encode(_ value: Swift.Array<Any>) throws
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+public protocol TSIdentityOrchestrationDelegate : AnyObject {
+  func identityOrchestrationDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.IdoServiceResponse, IdentityOrchestration.IdoJourneyError>)
+}
+@_hasMissingDesignatedInitializers final public class TSIdentityOrchestration {
+  public static var delegate: (any IdentityOrchestration.TSIdentityOrchestrationDelegate)? {
+    get
+    set(newDelegate)
+  }
+  public static func initialize(clientId: Swift.String, options: IdentityOrchestration.IdoInitJourneyOptions)
+  public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.IdoStartJourneyOptions? = nil)
+  public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.ClientResponseOptionType, data: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+extension IdentityOrchestration.IdoJourneyError : Swift.Equatable {}
+extension IdentityOrchestration.IdoJourneyError : Swift.Hashable {}
+extension IdentityOrchestration.IdoServiceResponseType : Swift.Equatable {}
+extension IdentityOrchestration.IdoServiceResponseType : Swift.Hashable {}
