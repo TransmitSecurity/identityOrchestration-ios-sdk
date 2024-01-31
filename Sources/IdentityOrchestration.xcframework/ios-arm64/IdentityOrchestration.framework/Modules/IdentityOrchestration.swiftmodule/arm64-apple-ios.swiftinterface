@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IdentityOrchestration
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
@@ -10,11 +10,14 @@ import TSCoreSDK
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import zlib
 public struct IdoInitJourneyOptions {
   public init(serverPath: Swift.String, applicationId: Swift.String)
 }
 public struct IdoStartJourneyOptions {
+  public let additionalParams: [Swift.String : Any]?
+  public let flowId: Swift.String?
   public init(additionalParams: [Swift.String : Any]?, flowId: Swift.String? = nil)
 }
 public enum IdoJourneyError : Swift.Error, Swift.Decodable {
@@ -55,6 +58,7 @@ extension IdentityOrchestration.ClientResponseOptionType : Swift.Equatable {
 public enum ClientResponseOptionType : Swift.Codable {
   case clientInput
   case cancel
+  case fail
   case custom(id: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -76,8 +80,12 @@ public enum IdoJourneyActionType : Swift.Codable {
   case information
   case debugBreak
   case waitForAnotherDevice
-  case cryptoBindingRegistration
-  case cryptoBindingValidation
+  case drsTriggerAction
+  case identityVerification
+  case webAuthnRegistration
+  case registerDeviceAction
+  case validateDeviceAction
+  case authentication
   case custom(name: Swift.String)
 }
 public protocol ClientResponseOption : Swift.Decodable, Swift.Encodable {
@@ -91,6 +99,12 @@ public protocol IdoServiceResponse {
   var data: [Swift.String : Any]? { get }
   var journeyStepId: IdentityOrchestration.IdoJourneyActionType? { get }
   var clientResponseOptions: [Swift.String : any IdentityOrchestration.ClientResponseOption]? { get }
+  var token: Swift.String? { get }
+}
+extension Swift.Encodable {
+  public var toDictionary: [Swift.String : Any]? {
+    get
+  }
 }
 public protocol TSIdentityOrchestrationDelegate : AnyObject {
   func identityOrchestrationDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.IdoServiceResponse, IdentityOrchestration.IdoJourneyError>)

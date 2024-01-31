@@ -1,7 +1,7 @@
 framework module IdentityOrchestration {
   umbrella header "IdentityOrchestration.h"
-
   export *
+
   module * { export * }
 }
 
