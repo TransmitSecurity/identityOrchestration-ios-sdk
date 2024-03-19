@@ -20,32 +20,12 @@ public struct IdoStartJourneyOptions {
   public let flowId: Swift.String?
   public init(additionalParams: [Swift.String : Any]?, flowId: Swift.String? = nil)
 }
-public enum IdoJourneyError : Swift.Error, Swift.Decodable {
+public enum IdoJourneyError : Swift.Error {
   case notInitialized
-  case noActiveJourney
-  case hasActiveJourney
   case networkError
   case clientResponseNotValid
-  case serverError
-  public static func == (a: IdentityOrchestration.IdoJourneyError, b: IdentityOrchestration.IdoJourneyError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum IdoServiceResponseType : Swift.Codable {
-  case journeySuccess
-  case clientInputRequired
-  case clientInputUpdateRequired
-  case journeyRejection
-  public static func == (a: IdentityOrchestration.IdoServiceResponseType, b: IdentityOrchestration.IdoServiceResponseType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
+  case serverError((any Swift.Error)?)
+  case initializationError
 }
 extension IdentityOrchestration.ClientResponseOptionType {
   public var id: Swift.String {
@@ -76,6 +56,7 @@ extension IdentityOrchestration.IdoJourneyActionType : Swift.RawRepresentable {
   }
 }
 public enum IdoJourneyActionType : Swift.Codable {
+  case success
   case rejection
   case information
   case debugBreak
@@ -85,7 +66,8 @@ public enum IdoJourneyActionType : Swift.Codable {
   case webAuthnRegistration
   case registerDeviceAction
   case validateDeviceAction
-  case authentication
+  case nativeBiometricsRegistration
+  case nativeBiometricsAuthenticaton
   case custom(name: Swift.String)
 }
 public protocol ClientResponseOption : Swift.Decodable, Swift.Encodable {
@@ -94,7 +76,6 @@ public protocol ClientResponseOption : Swift.Decodable, Swift.Encodable {
   var label: Swift.String { get }
 }
 public protocol IdoServiceResponse {
-  var type: IdentityOrchestration.IdoServiceResponseType { get }
   var rejectionReason: Swift.String? { get }
   var data: [Swift.String : Any]? { get }
   var journeyStepId: IdentityOrchestration.IdoJourneyActionType? { get }
@@ -114,12 +95,8 @@ public protocol TSIdentityOrchestrationDelegate : AnyObject {
     get
     set(newDelegate)
   }
-  public static func initialize(clientId: Swift.String, options: IdentityOrchestration.IdoInitJourneyOptions)
+  public static func initializeSDK() throws
   public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.IdoStartJourneyOptions? = nil)
   public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.ClientResponseOptionType, data: [Swift.String : Any]? = nil)
   @objc deinit
 }
-extension IdentityOrchestration.IdoJourneyError : Swift.Equatable {}
-extension IdentityOrchestration.IdoJourneyError : Swift.Hashable {}
-extension IdentityOrchestration.IdoServiceResponseType : Swift.Equatable {}
-extension IdentityOrchestration.IdoServiceResponseType : Swift.Hashable {}

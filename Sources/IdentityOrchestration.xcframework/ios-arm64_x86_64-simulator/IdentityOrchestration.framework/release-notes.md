@@ -11,6 +11,14 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.0.1 - March 2024
+### Content
+#### New Features
+1. Added TOTP registration and authentication API.
+2. Added Native Biometrics registration and authentication API.
+3. Added Apple’s privacy manifest file.
+4. Added SDK initialization API configured from Transmit Security plist file.
+
 
 ## 1.0.0 - February 2024
 ### Content
