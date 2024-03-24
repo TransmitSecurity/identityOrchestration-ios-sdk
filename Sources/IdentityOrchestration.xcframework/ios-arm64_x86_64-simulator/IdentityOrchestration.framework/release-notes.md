@@ -11,6 +11,11 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.0 - March 2024
+### Content
+#### New Features
+1. Added compatibility with the most recent version.
+
 ## 1.0.1 - March 2024
 ### Content
 #### New Features
