@@ -12,30 +12,30 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
-public struct IdoInitJourneyOptions {
+public struct TSIdoInitJourneyOptions {
   public init(serverPath: Swift.String, applicationId: Swift.String)
 }
-public struct IdoStartJourneyOptions {
+public struct TSIdoStartJourneyOptions {
   public let additionalParams: [Swift.String : Any]?
   public let flowId: Swift.String?
   public init(additionalParams: [Swift.String : Any]?, flowId: Swift.String? = nil)
 }
-public enum IdoJourneyError : Swift.Error {
+public enum TSIdoJourneyError : Swift.Error {
   case notInitialized
   case networkError
   case clientResponseNotValid
   case serverError((any Swift.Error)?)
   case initializationError
 }
-extension IdentityOrchestration.ClientResponseOptionType {
+extension IdentityOrchestration.TSIdoClientResponseOptionType {
   public var id: Swift.String {
     get
   }
 }
-extension IdentityOrchestration.ClientResponseOptionType : Swift.Equatable {
-  public static func == (lhs: IdentityOrchestration.ClientResponseOptionType, rhs: IdentityOrchestration.ClientResponseOptionType) -> Swift.Bool
+extension IdentityOrchestration.TSIdoClientResponseOptionType : Swift.Equatable {
+  public static func == (lhs: IdentityOrchestration.TSIdoClientResponseOptionType, rhs: IdentityOrchestration.TSIdoClientResponseOptionType) -> Swift.Bool
 }
-public enum ClientResponseOptionType : Swift.Codable {
+public enum TSIdoClientResponseOptionType : Swift.Codable {
   case clientInput
   case cancel
   case fail
@@ -43,19 +43,19 @@ public enum ClientResponseOptionType : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension IdentityOrchestration.IdoJourneyActionType : Swift.CustomStringConvertible, Swift.Equatable {
+extension IdentityOrchestration.TSIdoJourneyActionType : Swift.CustomStringConvertible, Swift.Equatable {
   public var description: Swift.String {
     get
   }
 }
-extension IdentityOrchestration.IdoJourneyActionType : Swift.RawRepresentable {
+extension IdentityOrchestration.TSIdoJourneyActionType : Swift.RawRepresentable {
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
     get
   }
 }
-public enum IdoJourneyActionType : Swift.Codable {
+public enum TSIdoJourneyActionType : Swift.Codable {
   case success
   case rejection
   case information
@@ -70,16 +70,16 @@ public enum IdoJourneyActionType : Swift.Codable {
   case nativeBiometricsAuthenticaton
   case custom(name: Swift.String)
 }
-public protocol ClientResponseOption : Swift.Decodable, Swift.Encodable {
-  var type: IdentityOrchestration.ClientResponseOptionType { get }
+public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
+  var type: IdentityOrchestration.TSIdoClientResponseOptionType { get }
   var id: Swift.String { get }
   var label: Swift.String { get }
 }
-public protocol IdoServiceResponse {
+public protocol TSIdoServiceResponse {
   var rejectionReason: Swift.String? { get }
   var data: [Swift.String : Any]? { get }
-  var journeyStepId: IdentityOrchestration.IdoJourneyActionType? { get }
-  var clientResponseOptions: [Swift.String : any IdentityOrchestration.ClientResponseOption]? { get }
+  var journeyStepId: IdentityOrchestration.TSIdoJourneyActionType? { get }
+  var clientResponseOptions: [Swift.String : any IdentityOrchestration.TSIdoClientResponseOption]? { get }
   var token: Swift.String? { get }
 }
 extension Swift.Encodable {
@@ -87,16 +87,16 @@ extension Swift.Encodable {
     get
   }
 }
-public protocol TSIdentityOrchestrationDelegate : AnyObject {
-  func identityOrchestrationDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.IdoServiceResponse, IdentityOrchestration.IdoJourneyError>)
+public protocol TSIdoDelegate : AnyObject {
+  func TSIdoDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.TSIdoServiceResponse, IdentityOrchestration.TSIdoJourneyError>)
 }
-@_hasMissingDesignatedInitializers final public class TSIdentityOrchestration {
-  public static var delegate: (any IdentityOrchestration.TSIdentityOrchestrationDelegate)? {
+@_hasMissingDesignatedInitializers final public class TSIdo {
+  public static var delegate: (any IdentityOrchestration.TSIdoDelegate)? {
     get
     set(newDelegate)
   }
   public static func initializeSDK() throws
-  public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.IdoStartJourneyOptions? = nil)
-  public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.ClientResponseOptionType, data: [Swift.String : Any]? = nil)
+  public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.TSIdoStartJourneyOptions? = nil)
+  public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil)
   @objc deinit
 }

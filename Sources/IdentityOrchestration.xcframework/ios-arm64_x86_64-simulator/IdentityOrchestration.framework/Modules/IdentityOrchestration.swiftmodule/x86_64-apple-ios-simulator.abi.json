@@ -199,8 +199,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "IdoInitJourneyOptions",
-        "printedName": "IdoInitJourneyOptions",
+        "name": "TSIdoInitJourneyOptions",
+        "printedName": "TSIdoInitJourneyOptions",
         "children": [
           {
             "kind": "Constructor",
@@ -209,9 +209,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "IdoInitJourneyOptions",
-                "printedName": "IdentityOrchestration.IdoInitJourneyOptions",
-                "usr": "s:21IdentityOrchestration21IdoInitJourneyOptionsV"
+                "name": "TSIdoInitJourneyOptions",
+                "printedName": "IdentityOrchestration.TSIdoInitJourneyOptions",
+                "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV"
               },
               {
                 "kind": "TypeNominal",
@@ -227,8 +227,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21IdentityOrchestration21IdoInitJourneyOptionsV10serverPath13applicationIdACSS_SStcfc",
-            "mangledName": "$s21IdentityOrchestration21IdoInitJourneyOptionsV10serverPath13applicationIdACSS_SStcfc",
+            "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV10serverPath13applicationIdACSS_SStcfc",
+            "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV10serverPath13applicationIdACSS_SStcfc",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "AccessControl"
@@ -237,8 +237,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:21IdentityOrchestration21IdoInitJourneyOptionsV",
-        "mangledName": "$s21IdentityOrchestration21IdoInitJourneyOptionsV",
+        "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV",
+        "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV",
         "moduleName": "IdentityOrchestration",
         "declAttributes": [
           "AccessControl",
@@ -247,8 +247,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "IdoStartJourneyOptions",
-        "printedName": "IdoStartJourneyOptions",
+        "name": "TSIdoStartJourneyOptions",
+        "printedName": "TSIdoStartJourneyOptions",
         "children": [
           {
             "kind": "Var",
@@ -284,8 +284,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV16additionalParamsSDySSypGSgvp",
-            "mangledName": "$s21IdentityOrchestration22IdoStartJourneyOptionsV16additionalParamsSDySSypGSgvp",
+            "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV16additionalParamsSDySSypGSgvp",
+            "mangledName": "$s21IdentityOrchestration24TSIdoStartJourneyOptionsV16additionalParamsSDySSypGSgvp",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "HasStorage",
@@ -329,8 +329,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV16additionalParamsSDySSypGSgvg",
-                "mangledName": "$s21IdentityOrchestration22IdoStartJourneyOptionsV16additionalParamsSDySSypGSgvg",
+                "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV16additionalParamsSDySSypGSgvg",
+                "mangledName": "$s21IdentityOrchestration24TSIdoStartJourneyOptionsV16additionalParamsSDySSypGSgvg",
                 "moduleName": "IdentityOrchestration",
                 "implicit": true,
                 "accessorKind": "get"
@@ -358,8 +358,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV6flowIdSSSgvp",
-            "mangledName": "$s21IdentityOrchestration22IdoStartJourneyOptionsV6flowIdSSSgvp",
+            "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV6flowIdSSSgvp",
+            "mangledName": "$s21IdentityOrchestration24TSIdoStartJourneyOptionsV6flowIdSSSgvp",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "HasStorage",
@@ -390,8 +390,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV6flowIdSSSgvg",
-                "mangledName": "$s21IdentityOrchestration22IdoStartJourneyOptionsV6flowIdSSSgvg",
+                "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV6flowIdSSSgvg",
+                "mangledName": "$s21IdentityOrchestration24TSIdoStartJourneyOptionsV6flowIdSSSgvg",
                 "moduleName": "IdentityOrchestration",
                 "implicit": true,
                 "accessorKind": "get"
@@ -405,9 +405,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "IdoStartJourneyOptions",
-                "printedName": "IdentityOrchestration.IdoStartJourneyOptions",
-                "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV"
+                "name": "TSIdoStartJourneyOptions",
+                "printedName": "IdentityOrchestration.TSIdoStartJourneyOptions",
+                "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV"
               },
               {
                 "kind": "TypeNominal",
@@ -453,8 +453,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV16additionalParams6flowIdACSDySSypGSg_SSSgtcfc",
-            "mangledName": "$s21IdentityOrchestration22IdoStartJourneyOptionsV16additionalParams6flowIdACSDySSypGSg_SSSgtcfc",
+            "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV16additionalParams6flowIdACSDySSypGSg_SSSgtcfc",
+            "mangledName": "$s21IdentityOrchestration24TSIdoStartJourneyOptionsV16additionalParams6flowIdACSDySSypGSg_SSSgtcfc",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "AccessControl"
@@ -463,8 +463,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV",
-        "mangledName": "$s21IdentityOrchestration22IdoStartJourneyOptionsV",
+        "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV",
+        "mangledName": "$s21IdentityOrchestration24TSIdoStartJourneyOptionsV",
         "moduleName": "IdentityOrchestration",
         "declAttributes": [
           "AccessControl",
@@ -473,8 +473,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "IdoJourneyError",
-        "printedName": "IdoJourneyError",
+        "name": "TSIdoJourneyError",
+        "printedName": "TSIdoJourneyError",
         "children": [
           {
             "kind": "Var",
@@ -484,24 +484,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyError.Type) -> IdentityOrchestration.IdoJourneyError",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyError.Type) -> IdentityOrchestration.TSIdoJourneyError",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyError",
-                    "printedName": "IdentityOrchestration.IdoJourneyError",
-                    "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                    "name": "TSIdoJourneyError",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                    "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyError.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyError",
-                        "printedName": "IdentityOrchestration.IdoJourneyError",
-                        "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                        "name": "TSIdoJourneyError",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                       }
                     ]
                   }
@@ -509,8 +509,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration15IdoJourneyErrorO14notInitializedyA2CmF",
-            "mangledName": "$s21IdentityOrchestration15IdoJourneyErrorO14notInitializedyA2CmF",
+            "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO14notInitializedyA2CmF",
+            "mangledName": "$s21IdentityOrchestration17TSIdoJourneyErrorO14notInitializedyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -524,24 +524,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyError.Type) -> IdentityOrchestration.IdoJourneyError",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyError.Type) -> IdentityOrchestration.TSIdoJourneyError",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyError",
-                    "printedName": "IdentityOrchestration.IdoJourneyError",
-                    "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                    "name": "TSIdoJourneyError",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                    "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyError.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyError",
-                        "printedName": "IdentityOrchestration.IdoJourneyError",
-                        "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                        "name": "TSIdoJourneyError",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                       }
                     ]
                   }
@@ -549,8 +549,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration15IdoJourneyErrorO07networkE0yA2CmF",
-            "mangledName": "$s21IdentityOrchestration15IdoJourneyErrorO07networkE0yA2CmF",
+            "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO07networkE0yA2CmF",
+            "mangledName": "$s21IdentityOrchestration17TSIdoJourneyErrorO07networkE0yA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -564,24 +564,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyError.Type) -> IdentityOrchestration.IdoJourneyError",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyError.Type) -> IdentityOrchestration.TSIdoJourneyError",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyError",
-                    "printedName": "IdentityOrchestration.IdoJourneyError",
-                    "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                    "name": "TSIdoJourneyError",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                    "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyError.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyError",
-                        "printedName": "IdentityOrchestration.IdoJourneyError",
-                        "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                        "name": "TSIdoJourneyError",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                       }
                     ]
                   }
@@ -589,8 +589,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration15IdoJourneyErrorO22clientResponseNotValidyA2CmF",
-            "mangledName": "$s21IdentityOrchestration15IdoJourneyErrorO22clientResponseNotValidyA2CmF",
+            "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO22clientResponseNotValidyA2CmF",
+            "mangledName": "$s21IdentityOrchestration17TSIdoJourneyErrorO22clientResponseNotValidyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -604,18 +604,18 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyError.Type) -> (Swift.Error?) -> IdentityOrchestration.IdoJourneyError",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyError.Type) -> (Swift.Error?) -> IdentityOrchestration.TSIdoJourneyError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?) -> IdentityOrchestration.IdoJourneyError",
+                    "printedName": "(Swift.Error?) -> IdentityOrchestration.TSIdoJourneyError",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyError",
-                        "printedName": "IdentityOrchestration.IdoJourneyError",
-                        "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                        "name": "TSIdoJourneyError",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                       },
                       {
                         "kind": "TypeNominal",
@@ -636,13 +636,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyError.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyError",
-                        "printedName": "IdentityOrchestration.IdoJourneyError",
-                        "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                        "name": "TSIdoJourneyError",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                       }
                     ]
                   }
@@ -650,8 +650,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration15IdoJourneyErrorO06serverE0yACs0E0_pSgcACmF",
-            "mangledName": "$s21IdentityOrchestration15IdoJourneyErrorO06serverE0yACs0E0_pSgcACmF",
+            "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO06serverE0yACs0E0_pSgcACmF",
+            "mangledName": "$s21IdentityOrchestration17TSIdoJourneyErrorO06serverE0yACs0E0_pSgcACmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -665,24 +665,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyError.Type) -> IdentityOrchestration.IdoJourneyError",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyError.Type) -> IdentityOrchestration.TSIdoJourneyError",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyError",
-                    "printedName": "IdentityOrchestration.IdoJourneyError",
-                    "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                    "name": "TSIdoJourneyError",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                    "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyError.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyError",
-                        "printedName": "IdentityOrchestration.IdoJourneyError",
-                        "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                        "name": "TSIdoJourneyError",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                       }
                     ]
                   }
@@ -690,8 +690,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration15IdoJourneyErrorO014initializationE0yA2CmF",
-            "mangledName": "$s21IdentityOrchestration15IdoJourneyErrorO014initializationE0yA2CmF",
+            "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO014initializationE0yA2CmF",
+            "mangledName": "$s21IdentityOrchestration17TSIdoJourneyErrorO014initializationE0yA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -699,8 +699,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:21IdentityOrchestration15IdoJourneyErrorO",
-        "mangledName": "$s21IdentityOrchestration15IdoJourneyErrorO",
+        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO",
+        "mangledName": "$s21IdentityOrchestration17TSIdoJourneyErrorO",
         "moduleName": "IdentityOrchestration",
         "declAttributes": [
           "AccessControl",
@@ -725,8 +725,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "ClientResponseOptionType",
-        "printedName": "ClientResponseOptionType",
+        "name": "TSIdoClientResponseOptionType",
+        "printedName": "TSIdoClientResponseOptionType",
         "children": [
           {
             "kind": "Var",
@@ -736,24 +736,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.ClientResponseOptionType.Type) -> IdentityOrchestration.ClientResponseOptionType",
+                "printedName": "(IdentityOrchestration.TSIdoClientResponseOptionType.Type) -> IdentityOrchestration.TSIdoClientResponseOptionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ClientResponseOptionType",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                    "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                    "name": "TSIdoClientResponseOptionType",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                    "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ClientResponseOptionType",
-                        "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                        "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                        "name": "TSIdoClientResponseOptionType",
+                        "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                        "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                       }
                     ]
                   }
@@ -761,8 +761,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO11clientInputyA2CmF",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO11clientInputyA2CmF",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO11clientInputyA2CmF",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO11clientInputyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -776,24 +776,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.ClientResponseOptionType.Type) -> IdentityOrchestration.ClientResponseOptionType",
+                "printedName": "(IdentityOrchestration.TSIdoClientResponseOptionType.Type) -> IdentityOrchestration.TSIdoClientResponseOptionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ClientResponseOptionType",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                    "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                    "name": "TSIdoClientResponseOptionType",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                    "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ClientResponseOptionType",
-                        "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                        "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                        "name": "TSIdoClientResponseOptionType",
+                        "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                        "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                       }
                     ]
                   }
@@ -801,8 +801,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO6cancelyA2CmF",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO6cancelyA2CmF",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO6cancelyA2CmF",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO6cancelyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -816,24 +816,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.ClientResponseOptionType.Type) -> IdentityOrchestration.ClientResponseOptionType",
+                "printedName": "(IdentityOrchestration.TSIdoClientResponseOptionType.Type) -> IdentityOrchestration.TSIdoClientResponseOptionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ClientResponseOptionType",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                    "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                    "name": "TSIdoClientResponseOptionType",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                    "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ClientResponseOptionType",
-                        "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                        "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                        "name": "TSIdoClientResponseOptionType",
+                        "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                        "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                       }
                     ]
                   }
@@ -841,8 +841,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO4failyA2CmF",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO4failyA2CmF",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO4failyA2CmF",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO4failyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -856,18 +856,18 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.ClientResponseOptionType.Type) -> (Swift.String) -> IdentityOrchestration.ClientResponseOptionType",
+                "printedName": "(IdentityOrchestration.TSIdoClientResponseOptionType.Type) -> (Swift.String) -> IdentityOrchestration.TSIdoClientResponseOptionType",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String) -> IdentityOrchestration.ClientResponseOptionType",
+                    "printedName": "(Swift.String) -> IdentityOrchestration.TSIdoClientResponseOptionType",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ClientResponseOptionType",
-                        "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                        "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                        "name": "TSIdoClientResponseOptionType",
+                        "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                        "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                       },
                       {
                         "kind": "TypeNominal",
@@ -887,13 +887,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ClientResponseOptionType",
-                        "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                        "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                        "name": "TSIdoClientResponseOptionType",
+                        "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                        "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                       }
                     ]
                   }
@@ -901,8 +901,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO6customyACSS_tcACmF",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO6customyACSS_tcACmF",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO6customyACSS_tcACmF",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO6customyACSS_tcACmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -915,9 +915,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ClientResponseOptionType",
-                "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                "name": "TSIdoClientResponseOptionType",
+                "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -927,8 +927,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO4fromACs7Decoder_p_tKcfc",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO4fromACs7Decoder_p_tKcfc",
             "moduleName": "IdentityOrchestration",
             "implicit": true,
             "throwing": true,
@@ -952,8 +952,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO6encode2toys7Encoder_p_tKF",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO6encode2toys7Encoder_p_tKF",
             "moduleName": "IdentityOrchestration",
             "implicit": true,
             "throwing": true,
@@ -972,8 +972,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO2idSSvp",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO2idSSvp",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO2idSSvp",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO2idSSvp",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "AccessControl"
@@ -993,8 +993,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO2idSSvg",
-                "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO2idSSvg",
+                "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO2idSSvg",
+                "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO2idSSvg",
                 "moduleName": "IdentityOrchestration",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -1014,20 +1014,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ClientResponseOptionType",
-                "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                "name": "TSIdoClientResponseOptionType",
+                "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ClientResponseOptionType",
-                "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                "name": "TSIdoClientResponseOptionType",
+                "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO2eeoiySbAC_ACtFZ",
+            "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO2eeoiySbAC_ACtFZ",
             "moduleName": "IdentityOrchestration",
             "static": true,
             "declAttributes": [
@@ -1038,8 +1038,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO",
-        "mangledName": "$s21IdentityOrchestration24ClientResponseOptionTypeO",
+        "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO",
+        "mangledName": "$s21IdentityOrchestration29TSIdoClientResponseOptionTypeO",
         "moduleName": "IdentityOrchestration",
         "declAttributes": [
           "AccessControl",
@@ -1071,8 +1071,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "IdoJourneyActionType",
-        "printedName": "IdoJourneyActionType",
+        "name": "TSIdoJourneyActionType",
+        "printedName": "TSIdoJourneyActionType",
         "children": [
           {
             "kind": "Var",
@@ -1082,24 +1082,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1107,8 +1107,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO7successyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO7successyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO7successyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO7successyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1122,24 +1122,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1147,8 +1147,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO9rejectionyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO9rejectionyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO9rejectionyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO9rejectionyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1162,24 +1162,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1187,8 +1187,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO11informationyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO11informationyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO11informationyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO11informationyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1202,24 +1202,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1227,8 +1227,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO10debugBreakyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO10debugBreakyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO10debugBreakyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO10debugBreakyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1242,24 +1242,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1267,8 +1267,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO20waitForAnotherDeviceyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO20waitForAnotherDeviceyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO20waitForAnotherDeviceyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO20waitForAnotherDeviceyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1282,24 +1282,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1307,8 +1307,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO010drsTriggerE0yA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO010drsTriggerE0yA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO010drsTriggerE0yA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO010drsTriggerE0yA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1322,24 +1322,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1347,8 +1347,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO20identityVerificationyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO20identityVerificationyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO20identityVerificationyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO20identityVerificationyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1362,24 +1362,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1387,8 +1387,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO20webAuthnRegistrationyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO20webAuthnRegistrationyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO20webAuthnRegistrationyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO20webAuthnRegistrationyA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1402,24 +1402,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1427,8 +1427,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO014registerDeviceE0yA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO014registerDeviceE0yA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO014registerDeviceE0yA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO014registerDeviceE0yA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1442,24 +1442,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1467,8 +1467,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO014validateDeviceE0yA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO014validateDeviceE0yA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO014validateDeviceE0yA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO014validateDeviceE0yA2CmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1482,24 +1482,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1507,8 +1507,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO28nativeBiometricsRegistrationyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO28nativeBiometricsRegistrationyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO28nativeBiometricsRegistrationyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO28nativeBiometricsRegistrationyA2CmF",
             "moduleName": "IdentityOrchestration"
           },
           {
@@ -1519,24 +1519,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1544,8 +1544,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO29nativeBiometricsAuthenticatonyA2CmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO29nativeBiometricsAuthenticatonyA2CmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO29nativeBiometricsAuthenticatonyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO29nativeBiometricsAuthenticatonyA2CmF",
             "moduleName": "IdentityOrchestration"
           },
           {
@@ -1556,18 +1556,18 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(IdentityOrchestration.IdoJourneyActionType.Type) -> (Swift.String) -> IdentityOrchestration.IdoJourneyActionType",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> (Swift.String) -> IdentityOrchestration.TSIdoJourneyActionType",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String) -> IdentityOrchestration.IdoJourneyActionType",
+                    "printedName": "(Swift.String) -> IdentityOrchestration.TSIdoJourneyActionType",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       },
                       {
                         "kind": "TypeNominal",
@@ -1587,13 +1587,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType.Type",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ]
                   }
@@ -1601,8 +1601,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO6customyACSS_tcACmF",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO6customyACSS_tcACmF",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO6customyACSS_tcACmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO6customyACSS_tcACmF",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "RawDocComment"
@@ -1621,8 +1621,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO11descriptionSSvp",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO11descriptionSSvp",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO11descriptionSSvp",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO11descriptionSSvp",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "AccessControl"
@@ -1642,8 +1642,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO11descriptionSSvg",
-                "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO11descriptionSSvg",
+                "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO11descriptionSSvg",
+                "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO11descriptionSSvg",
                 "moduleName": "IdentityOrchestration",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -1658,13 +1658,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "IdentityOrchestration.IdoJourneyActionType?",
+                "printedName": "IdentityOrchestration.TSIdoJourneyActionType?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1677,8 +1677,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO8rawValueACSgSS_tcfc",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO8rawValueACSgSS_tcfc",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "AccessControl"
@@ -1699,8 +1699,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO8rawValueSSvp",
-            "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO8rawValueSSvp",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO8rawValueSSvp",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO8rawValueSSvp",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "AccessControl"
@@ -1720,8 +1720,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO8rawValueSSvg",
-                "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO8rawValueSSvg",
+                "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO8rawValueSSvg",
+                "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO8rawValueSSvg",
                 "moduleName": "IdentityOrchestration",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -1730,8 +1730,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO",
-        "mangledName": "$s21IdentityOrchestration20IdoJourneyActionTypeO",
+        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO",
+        "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO",
         "moduleName": "IdentityOrchestration",
         "declAttributes": [
           "AccessControl",
@@ -1792,8 +1792,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "ClientResponseOption",
-        "printedName": "ClientResponseOption",
+        "name": "TSIdoClientResponseOption",
+        "printedName": "TSIdoClientResponseOption",
         "children": [
           {
             "kind": "Var",
@@ -1802,14 +1802,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ClientResponseOptionType",
-                "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                "name": "TSIdoClientResponseOptionType",
+                "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration20ClientResponseOptionP4typeAA0cdE4TypeOvp",
-            "mangledName": "$s21IdentityOrchestration20ClientResponseOptionP4typeAA0cdE4TypeOvp",
+            "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP4typeAA0cdeF4TypeOvp",
+            "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP4typeAA0cdeF4TypeOvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -1823,17 +1823,17 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ClientResponseOptionType",
-                    "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                    "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                    "name": "TSIdoClientResponseOptionType",
+                    "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                    "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration20ClientResponseOptionP4typeAA0cdE4TypeOvg",
-                "mangledName": "$s21IdentityOrchestration20ClientResponseOptionP4typeAA0cdE4TypeOvg",
+                "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP4typeAA0cdeF4TypeOvg",
+                "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP4typeAA0cdeF4TypeOvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.ClientResponseOption>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.ClientResponseOption>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoClientResponseOption>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoClientResponseOption>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -1853,8 +1853,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration20ClientResponseOptionP2idSSvp",
-            "mangledName": "$s21IdentityOrchestration20ClientResponseOptionP2idSSvp",
+            "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP2idSSvp",
+            "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP2idSSvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -1874,11 +1874,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration20ClientResponseOptionP2idSSvg",
-                "mangledName": "$s21IdentityOrchestration20ClientResponseOptionP2idSSvg",
+                "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP2idSSvg",
+                "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP2idSSvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.ClientResponseOption>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.ClientResponseOption>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoClientResponseOption>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoClientResponseOption>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -1898,8 +1898,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration20ClientResponseOptionP5labelSSvp",
-            "mangledName": "$s21IdentityOrchestration20ClientResponseOptionP5labelSSvp",
+            "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP5labelSSvp",
+            "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP5labelSSvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -1919,11 +1919,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration20ClientResponseOptionP5labelSSvg",
-                "mangledName": "$s21IdentityOrchestration20ClientResponseOptionP5labelSSvg",
+                "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP5labelSSvg",
+                "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP5labelSSvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.ClientResponseOption>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.ClientResponseOption>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoClientResponseOption>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoClientResponseOption>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -1932,8 +1932,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:21IdentityOrchestration20ClientResponseOptionP",
-        "mangledName": "$s21IdentityOrchestration20ClientResponseOptionP",
+        "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP",
+        "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP",
         "moduleName": "IdentityOrchestration",
         "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
         "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
@@ -1960,8 +1960,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "IdoServiceResponse",
-        "printedName": "IdoServiceResponse",
+        "name": "TSIdoServiceResponse",
+        "printedName": "TSIdoServiceResponse",
         "children": [
           {
             "kind": "Var",
@@ -1984,8 +1984,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration18IdoServiceResponseP15rejectionReasonSSSgvp",
-            "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP15rejectionReasonSSSgvp",
+            "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP15rejectionReasonSSSgvp",
+            "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP15rejectionReasonSSSgvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -2013,11 +2013,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration18IdoServiceResponseP15rejectionReasonSSSgvg",
-                "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP15rejectionReasonSSSgvg",
+                "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP15rejectionReasonSSSgvg",
+                "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP15rejectionReasonSSSgvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.IdoServiceResponse>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.IdoServiceResponse>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoServiceResponse>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoServiceResponse>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -2058,8 +2058,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration18IdoServiceResponseP4dataSDySSypGSgvp",
-            "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP4dataSDySSypGSgvp",
+            "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP4dataSDySSypGSgvp",
+            "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP4dataSDySSypGSgvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -2100,11 +2100,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration18IdoServiceResponseP4dataSDySSypGSgvg",
-                "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP4dataSDySSypGSgvg",
+                "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP4dataSDySSypGSgvg",
+                "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP4dataSDySSypGSgvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.IdoServiceResponse>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.IdoServiceResponse>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoServiceResponse>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoServiceResponse>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -2119,21 +2119,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "IdentityOrchestration.IdoJourneyActionType?",
+                "printedName": "IdentityOrchestration.TSIdoJourneyActionType?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyActionType",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                    "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration18IdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvp",
-            "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvp",
+            "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvp",
+            "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -2148,24 +2148,24 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "IdentityOrchestration.IdoJourneyActionType?",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "IdoJourneyActionType",
-                        "printedName": "IdentityOrchestration.IdoJourneyActionType",
-                        "usr": "s:21IdentityOrchestration20IdoJourneyActionTypeO"
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration18IdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvg",
-                "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvg",
+                "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvg",
+                "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP13journeyStepIdAA0C17JourneyActionTypeOSgvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.IdoServiceResponse>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.IdoServiceResponse>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoServiceResponse>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoServiceResponse>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -2180,12 +2180,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : IdentityOrchestration.ClientResponseOption]?",
+                "printedName": "[Swift.String : IdentityOrchestration.TSIdoClientResponseOption]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : IdentityOrchestration.ClientResponseOption]",
+                    "printedName": "[Swift.String : IdentityOrchestration.TSIdoClientResponseOption]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2195,9 +2195,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ClientResponseOption",
-                        "printedName": "IdentityOrchestration.ClientResponseOption",
-                        "usr": "s:21IdentityOrchestration20ClientResponseOptionP"
+                        "name": "TSIdoClientResponseOption",
+                        "printedName": "IdentityOrchestration.TSIdoClientResponseOption",
+                        "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP"
                       }
                     ],
                     "usr": "s:SD"
@@ -2207,8 +2207,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration18IdoServiceResponseP06clientE7OptionsSDySSAA06ClientE6Option_pGSgvp",
-            "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP06clientE7OptionsSDySSAA06ClientE6Option_pGSgvp",
+            "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP06clientE7OptionsSDySSAA0c6ClientE6Option_pGSgvp",
+            "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP06clientE7OptionsSDySSAA0c6ClientE6Option_pGSgvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -2223,12 +2223,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : IdentityOrchestration.ClientResponseOption]?",
+                    "printedName": "[Swift.String : IdentityOrchestration.TSIdoClientResponseOption]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : IdentityOrchestration.ClientResponseOption]",
+                        "printedName": "[Swift.String : IdentityOrchestration.TSIdoClientResponseOption]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2238,9 +2238,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ClientResponseOption",
-                            "printedName": "IdentityOrchestration.ClientResponseOption",
-                            "usr": "s:21IdentityOrchestration20ClientResponseOptionP"
+                            "name": "TSIdoClientResponseOption",
+                            "printedName": "IdentityOrchestration.TSIdoClientResponseOption",
+                            "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP"
                           }
                         ],
                         "usr": "s:SD"
@@ -2250,11 +2250,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration18IdoServiceResponseP06clientE7OptionsSDySSAA06ClientE6Option_pGSgvg",
-                "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP06clientE7OptionsSDySSAA06ClientE6Option_pGSgvg",
+                "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP06clientE7OptionsSDySSAA0c6ClientE6Option_pGSgvg",
+                "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP06clientE7OptionsSDySSAA0c6ClientE6Option_pGSgvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.IdoServiceResponse>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.IdoServiceResponse>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoServiceResponse>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoServiceResponse>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -2282,8 +2282,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration18IdoServiceResponseP5tokenSSSgvp",
-            "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP5tokenSSSgvp",
+            "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP5tokenSSSgvp",
+            "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP5tokenSSSgvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -2311,11 +2311,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration18IdoServiceResponseP5tokenSSSgvg",
-                "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP5tokenSSSgvg",
+                "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP5tokenSSSgvg",
+                "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP5tokenSSSgvg",
                 "moduleName": "IdentityOrchestration",
-                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.IdoServiceResponse>",
-                "sugared_genericSig": "<Self where Self : IdentityOrchestration.IdoServiceResponse>",
+                "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoServiceResponse>",
+                "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoServiceResponse>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -2324,8 +2324,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:21IdentityOrchestration18IdoServiceResponseP",
-        "mangledName": "$s21IdentityOrchestration18IdoServiceResponseP",
+        "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP",
+        "mangledName": "$s21IdentityOrchestration20TSIdoServiceResponseP",
         "moduleName": "IdentityOrchestration",
         "declAttributes": [
           "AccessControl",
@@ -2568,13 +2568,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TSIdentityOrchestrationDelegate",
-        "printedName": "TSIdentityOrchestrationDelegate",
+        "name": "TSIdoDelegate",
+        "printedName": "TSIdoDelegate",
         "children": [
           {
             "kind": "Function",
-            "name": "identityOrchestrationDidReceiveResult",
-            "printedName": "identityOrchestrationDidReceiveResult(_:)",
+            "name": "TSIdoDidReceiveResult",
+            "printedName": "TSIdoDidReceiveResult(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2584,30 +2584,30 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<IdentityOrchestration.IdoServiceResponse, IdentityOrchestration.IdoJourneyError>",
+                "printedName": "Swift.Result<IdentityOrchestration.TSIdoServiceResponse, IdentityOrchestration.TSIdoJourneyError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoServiceResponse",
-                    "printedName": "IdentityOrchestration.IdoServiceResponse",
-                    "usr": "s:21IdentityOrchestration18IdoServiceResponseP"
+                    "name": "TSIdoServiceResponse",
+                    "printedName": "IdentityOrchestration.TSIdoServiceResponse",
+                    "usr": "s:21IdentityOrchestration20TSIdoServiceResponseP"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoJourneyError",
-                    "printedName": "IdentityOrchestration.IdoJourneyError",
-                    "usr": "s:21IdentityOrchestration15IdoJourneyErrorO"
+                    "name": "TSIdoJourneyError",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                    "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
                   }
                 ],
                 "usr": "s:s6ResultO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:21IdentityOrchestration010TSIdentityB8DelegateP08identityB16DidReceiveResultyys0H0OyAA18IdoServiceResponse_pAA0I12JourneyErrorOGF",
-            "mangledName": "$s21IdentityOrchestration010TSIdentityB8DelegateP08identityB16DidReceiveResultyys0H0OyAA18IdoServiceResponse_pAA0I12JourneyErrorOGF",
+            "usr": "s:21IdentityOrchestration13TSIdoDelegateP0C16DidReceiveResultyys0G0OyAA0C15ServiceResponse_pAA0C12JourneyErrorOGF",
+            "mangledName": "$s21IdentityOrchestration13TSIdoDelegateP0C16DidReceiveResultyys0G0OyAA0C15ServiceResponse_pAA0C12JourneyErrorOGF",
             "moduleName": "IdentityOrchestration",
-            "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdentityOrchestrationDelegate>",
-            "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdentityOrchestrationDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoDelegate>",
+            "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoDelegate>",
             "protocolReq": true,
             "declAttributes": [
               "RawDocComment"
@@ -2617,8 +2617,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:21IdentityOrchestration010TSIdentityB8DelegateP",
-        "mangledName": "$s21IdentityOrchestration010TSIdentityB8DelegateP",
+        "usr": "s:21IdentityOrchestration13TSIdoDelegateP",
+        "mangledName": "$s21IdentityOrchestration13TSIdoDelegateP",
         "moduleName": "IdentityOrchestration",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -2646,8 +2646,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TSIdentityOrchestration",
-        "printedName": "TSIdentityOrchestration",
+        "name": "TSIdo",
+        "printedName": "TSIdo",
         "children": [
           {
             "kind": "Var",
@@ -2657,21 +2657,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "IdentityOrchestration.TSIdentityOrchestrationDelegate?",
+                "printedName": "IdentityOrchestration.TSIdoDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "TSIdentityOrchestrationDelegate",
-                    "printedName": "IdentityOrchestration.TSIdentityOrchestrationDelegate",
-                    "usr": "s:21IdentityOrchestration010TSIdentityB8DelegateP"
+                    "name": "TSIdoDelegate",
+                    "printedName": "IdentityOrchestration.TSIdoDelegate",
+                    "usr": "s:21IdentityOrchestration13TSIdoDelegateP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvpZ",
-            "mangledName": "$s21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvpZ",
+            "usr": "s:21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvpZ",
+            "mangledName": "$s21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvpZ",
             "moduleName": "IdentityOrchestration",
             "static": true,
             "declAttributes": [
@@ -2687,21 +2687,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "IdentityOrchestration.TSIdentityOrchestrationDelegate?",
+                    "printedName": "IdentityOrchestration.TSIdoDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "TSIdentityOrchestrationDelegate",
-                        "printedName": "IdentityOrchestration.TSIdentityOrchestrationDelegate",
-                        "usr": "s:21IdentityOrchestration010TSIdentityB8DelegateP"
+                        "name": "TSIdoDelegate",
+                        "printedName": "IdentityOrchestration.TSIdoDelegate",
+                        "usr": "s:21IdentityOrchestration13TSIdoDelegateP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvgZ",
-                "mangledName": "$s21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvgZ",
+                "usr": "s:21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvgZ",
+                "mangledName": "$s21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvgZ",
                 "moduleName": "IdentityOrchestration",
                 "static": true,
                 "declAttributes": [
@@ -2722,21 +2722,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "IdentityOrchestration.TSIdentityOrchestrationDelegate?",
+                    "printedName": "IdentityOrchestration.TSIdoDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "TSIdentityOrchestrationDelegate",
-                        "printedName": "IdentityOrchestration.TSIdentityOrchestrationDelegate",
-                        "usr": "s:21IdentityOrchestration010TSIdentityB8DelegateP"
+                        "name": "TSIdoDelegate",
+                        "printedName": "IdentityOrchestration.TSIdoDelegate",
+                        "usr": "s:21IdentityOrchestration13TSIdoDelegateP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvsZ",
-                "mangledName": "$s21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvsZ",
+                "usr": "s:21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvsZ",
+                "mangledName": "$s21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvsZ",
                 "moduleName": "IdentityOrchestration",
                 "static": true,
                 "declAttributes": [
@@ -2756,8 +2756,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvMZ",
-                "mangledName": "$s21IdentityOrchestration010TSIdentityB0C8delegateAA0cB8Delegate_pSgvMZ",
+                "usr": "s:21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvMZ",
+                "mangledName": "$s21IdentityOrchestration5TSIdoC8delegateAA0C8Delegate_pSgvMZ",
                 "moduleName": "IdentityOrchestration",
                 "static": true,
                 "implicit": true,
@@ -2780,8 +2780,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21IdentityOrchestration010TSIdentityB0C13initializeSDKyyKFZ",
-            "mangledName": "$s21IdentityOrchestration010TSIdentityB0C13initializeSDKyyKFZ",
+            "usr": "s:21IdentityOrchestration5TSIdoC13initializeSDKyyKFZ",
+            "mangledName": "$s21IdentityOrchestration5TSIdoC13initializeSDKyyKFZ",
             "moduleName": "IdentityOrchestration",
             "static": true,
             "declAttributes": [
@@ -2811,13 +2811,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "IdentityOrchestration.IdoStartJourneyOptions?",
+                "printedName": "IdentityOrchestration.TSIdoStartJourneyOptions?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "IdoStartJourneyOptions",
-                    "printedName": "IdentityOrchestration.IdoStartJourneyOptions",
-                    "usr": "s:21IdentityOrchestration22IdoStartJourneyOptionsV"
+                    "name": "TSIdoStartJourneyOptions",
+                    "printedName": "IdentityOrchestration.TSIdoStartJourneyOptions",
+                    "usr": "s:21IdentityOrchestration24TSIdoStartJourneyOptionsV"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -2825,8 +2825,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21IdentityOrchestration010TSIdentityB0C12startJourney9journeyId7optionsySS_AA08IdoStartE7OptionsVSgtFZ",
-            "mangledName": "$s21IdentityOrchestration010TSIdentityB0C12startJourney9journeyId7optionsySS_AA08IdoStartE7OptionsVSgtFZ",
+            "usr": "s:21IdentityOrchestration5TSIdoC12startJourney9journeyId7optionsySS_AA0c5StartE7OptionsVSgtFZ",
+            "mangledName": "$s21IdentityOrchestration5TSIdoC12startJourney9journeyId7optionsySS_AA0c5StartE7OptionsVSgtFZ",
             "moduleName": "IdentityOrchestration",
             "static": true,
             "declAttributes": [
@@ -2848,9 +2848,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ClientResponseOptionType",
-                "printedName": "IdentityOrchestration.ClientResponseOptionType",
-                "usr": "s:21IdentityOrchestration24ClientResponseOptionTypeO"
+                "name": "TSIdoClientResponseOptionType",
+                "printedName": "IdentityOrchestration.TSIdoClientResponseOptionType",
+                "usr": "s:21IdentityOrchestration29TSIdoClientResponseOptionTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -2882,8 +2882,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21IdentityOrchestration010TSIdentityB0C20submitClientResponse06clientF8OptionId4datayAA0efH4TypeO_SDySSypGSgtFZ",
-            "mangledName": "$s21IdentityOrchestration010TSIdentityB0C20submitClientResponse06clientF8OptionId4datayAA0efH4TypeO_SDySSypGSgtFZ",
+            "usr": "s:21IdentityOrchestration5TSIdoC20submitClientResponse06clientF8OptionId4datayAA0cefH4TypeO_SDySSypGSgtFZ",
+            "mangledName": "$s21IdentityOrchestration5TSIdoC20submitClientResponse06clientF8OptionId4datayAA0cefH4TypeO_SDySSypGSgtFZ",
             "moduleName": "IdentityOrchestration",
             "static": true,
             "declAttributes": [
@@ -2895,8 +2895,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:21IdentityOrchestration010TSIdentityB0C",
-        "mangledName": "$s21IdentityOrchestration010TSIdentityB0C",
+        "usr": "s:21IdentityOrchestration5TSIdoC",
+        "mangledName": "$s21IdentityOrchestration5TSIdoC",
         "moduleName": "IdentityOrchestration",
         "declAttributes": [
           "AccessControl",
@@ -3144,28 +3144,42 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/TSJourneyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2364,
+      "offset": 2388,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/TSJourneyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3315,
+      "offset": 3344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/TSJourneyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3478,
+      "offset": 3507,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/TSJourneyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3847,
+      "offset": 3899,
+      "length": 5,
+      "value": "\"ido\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/TSJourneyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4175,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/TSJourneyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4572,
       "length": 2,
       "value": "\"\""
     },
@@ -3590,135 +3604,135 @@
       "value": "\"\/sdk-settings\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1814,
+      "offset": 1825,
       "length": 14,
       "value": "\"client_input\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1869,
       "length": 8,
       "value": "\"cancel\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1894,
+      "offset": 1905,
       "length": 6,
       "value": "\"fail\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "BooleanLiteral",
-      "offset": 2145,
+      "offset": 2161,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "BooleanLiteral",
-      "offset": 2190,
+      "offset": 2206,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "BooleanLiteral",
-      "offset": 2231,
+      "offset": 2247,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "BooleanLiteral",
-      "offset": 2342,
+      "offset": 2358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3069,
+      "offset": 3092,
       "length": 16,
       "value": "\"action:success\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3126,
+      "offset": 3149,
       "length": 18,
       "value": "\"action:rejection\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3187,
+      "offset": 3210,
       "length": 20,
       "value": "\"action:information\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3249,
+      "offset": 3272,
       "length": 20,
       "value": "\"action:debug_break\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3321,
+      "offset": 3344,
       "length": 24,
       "value": "\"action:wait_for_ticket\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3409,
+      "offset": 3432,
       "length": 27,
       "value": "\"action:drs_trigger_action\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3488,
+      "offset": 3511,
       "length": 24,
       "value": "\"action:id_verification\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3564,
+      "offset": 3587,
       "length": 42,
       "value": "\"transmit_platform_web_authn_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3658,
+      "offset": 3681,
       "length": 39,
       "value": "\"transmit_platform_device_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3749,
+      "offset": 3772,
       "length": 37,
       "value": "\"transmit_platform_device_validation\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3846,
+      "offset": 3869,
       "length": 50,
       "value": "\"transmit_platform_mobile_biometrics_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdoTypes.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3958,
+      "offset": 3981,
       "length": 52,
       "value": "\"transmit_platform_mobile_biometrics_authentication\""
     },
@@ -4019,28 +4033,28 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
-      "offset": 386,
+      "offset": 390,
       "length": 13,
       "value": "\"phone_input\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
-      "offset": 757,
+      "offset": 770,
       "length": 11,
       "value": "\"otp_input\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
-      "offset": 1126,
+      "offset": 1148,
       "length": 11,
       "value": "\"kba_input\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
-      "offset": 1569,
+      "offset": 1600,
       "length": 9,
       "value": "\"success\""
     },
@@ -4376,245 +4390,245 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7282,
+      "offset": 7288,
       "length": 10,
       "value": "\"app_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7349,
+      "offset": 7355,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7437,
+      "offset": 7443,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7473,
+      "offset": 7479,
       "length": 11,
       "value": "\"ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7516,
+      "offset": 7522,
       "length": 15,
       "value": "\"raw_ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7566,
+      "offset": 7572,
       "length": 17,
       "value": "\"polling_timeout\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7614,
+      "offset": 7620,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7663,
+      "offset": 7669,
       "length": 18,
       "value": "\"device_challenge\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7282,
+      "offset": 7288,
       "length": 10,
       "value": "\"app_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7349,
+      "offset": 7355,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7437,
+      "offset": 7443,
       "length": 9,
       "value": "\"form_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7473,
+      "offset": 7479,
       "length": 11,
       "value": "\"ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7516,
+      "offset": 7522,
       "length": 15,
       "value": "\"raw_ticket_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7566,
+      "offset": 7572,
       "length": 17,
       "value": "\"polling_timeout\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7614,
+      "offset": 7620,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7663,
+      "offset": 7669,
       "length": 18,
       "value": "\"device_challenge\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 9153,
+      "offset": 9159,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10611,
+      "offset": 10617,
       "length": 11,
       "value": "\"json_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10677,
+      "offset": 10683,
       "length": 14,
       "value": "\"control_flow\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10730,
+      "offset": 10736,
       "length": 21,
       "value": "\"assertions_complete\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10790,
+      "offset": 10796,
       "length": 22,
       "value": "\"assertion_error_code\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10854,
+      "offset": 10860,
       "length": 25,
       "value": "\"assertion_error_message\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10913,
+      "offset": 10919,
       "length": 16,
       "value": "\"rejection_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10961,
+      "offset": 10967,
       "length": 14,
       "value": "\"failure_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11010,
+      "offset": 11016,
       "length": 17,
       "value": "\"change_detected\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10611,
+      "offset": 10617,
       "length": 11,
       "value": "\"json_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10677,
+      "offset": 10683,
       "length": 14,
       "value": "\"control_flow\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10730,
+      "offset": 10736,
       "length": 21,
       "value": "\"assertions_complete\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10790,
+      "offset": 10796,
       "length": 22,
       "value": "\"assertion_error_code\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10854,
+      "offset": 10860,
       "length": 25,
       "value": "\"assertion_error_message\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10913,
+      "offset": 10919,
       "length": 16,
       "value": "\"rejection_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10961,
+      "offset": 10967,
       "length": 14,
       "value": "\"failure_data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11010,
+      "offset": 11016,
       "length": 17,
       "value": "\"change_detected\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11332,
+      "offset": 11338,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11332,
+      "offset": 11338,
       "length": 14,
       "value": "\"display_name\""
     },
@@ -4719,259 +4733,259 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 922,
+      "offset": 906,
       "length": 49,
       "value": "\"init controller user api - cientId: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 954,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 1718,
+      "offset": 1704,
       "length": 41,
       "value": "\"start journey - journeyId: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 1758,
+      "offset": 1744,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 2174,
+      "offset": 2160,
       "length": 62,
       "value": "\"no applicationId or clientId found for journey: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 2235,
+      "offset": 2221,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 3352,
+      "offset": 3343,
       "length": 76,
       "value": "\"submit client response - clientResponseOptionId: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 3427,
+      "offset": 3418,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 4193,
+      "offset": 4184,
       "length": 67,
       "value": "\"One of the arguments is missing in submit client response request\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 4707,
+      "offset": 4698,
       "length": 66,
       "value": "\"Unsupported client response option: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 4772,
+      "offset": 4763,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 6059,
+      "offset": 6050,
       "length": 23,
       "value": "\"No client submit data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 8418,
+      "offset": 8414,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 9082,
+      "offset": 9078,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 9126,
+      "offset": 9122,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 9281,
+      "offset": 9277,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 9434,
+      "offset": 9430,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 9462,
+      "offset": 9458,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 9713,
+      "offset": 9709,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 9878,
+      "offset": 9874,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 10041,
+      "offset": 10037,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 10283,
+      "offset": 10279,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 10754,
+      "offset": 10750,
       "length": 52,
       "value": "\"Failed to fetch key: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 10805,
+      "offset": 10801,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 11016,
+      "offset": 11012,
       "length": 28,
       "value": "\"No challenge found to sign\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 11473,
+      "offset": 11469,
       "length": 40,
       "value": "\"Failed to sign challenge: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 11512,
+      "offset": 11508,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "Dictionary",
-      "offset": 12054,
+      "offset": 12050,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12714,
+      "offset": 12710,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12804,
+      "offset": 12800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13396,
+      "offset": 13392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13485,
+      "offset": 13481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 14745,
+      "offset": 14741,
       "length": 8,
       "value": "\"ticket\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 16606,
+      "offset": 16572,
       "length": 59,
       "value": "\"journey server error: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 16664,
+      "offset": 16630,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 17179,
+      "offset": 17145,
       "length": 46,
       "value": "\"journey error: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 17224,
+      "offset": 17190,
       "length": 2,
       "value": "\"\""
     },
@@ -5041,56 +5055,56 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 2780,
+      "offset": 2787,
       "length": 83,
       "value": "\"Cannot complete an already completed journey. Current state: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 2862,
+      "offset": 2869,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 3092,
+      "offset": 3099,
       "length": 80,
       "value": "\"Cannot reject an already rejected journey. Current state: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 3171,
+      "offset": 3178,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 3400,
+      "offset": 3407,
       "length": 78,
       "value": "\"Cannot abort an already aborted journey. Current state: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 3477,
+      "offset": 3484,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 3703,
+      "offset": 3710,
       "length": 69,
       "value": "\"Cannot run a completed journey. Current state: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
-      "offset": 3771,
+      "offset": 3778,
       "length": 2,
       "value": "\"\""
     },
@@ -5104,203 +5118,203 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 562,
+      "offset": 572,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 604,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 562,
+      "offset": 572,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 604,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 562,
+      "offset": 572,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 604,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 898,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 898,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 898,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "Dictionary",
-      "offset": 4225,
+      "offset": 4244,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "Dictionary",
-      "offset": 4377,
+      "offset": 4396,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "Dictionary",
-      "offset": 4548,
+      "offset": 4567,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 5618,
+      "offset": 5637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 5795,
+      "offset": 5814,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 6193,
+      "offset": 6212,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "Dictionary",
-      "offset": 6880,
+      "offset": 6909,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7262,
+      "offset": 7306,
       "length": 14,
       "value": "\"Client Input\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7635,
+      "offset": 7694,
       "length": 9,
       "value": "\"Failure\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 9547,
+      "offset": 9615,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 10118,
+      "offset": 10188,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10268,
+      "offset": 10338,
       "length": 29,
       "value": "\">>> IdoJourneyResponse:\n\n\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10325,
+      "offset": 10395,
       "length": 17,
       "value": "\"Type: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10339,
+      "offset": 10409,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10361,
+      "offset": 10431,
       "length": 56,
       "value": "\"Journey step id: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10411,
+      "offset": 10481,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10414,
+      "offset": 10484,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10436,
+      "offset": 10506,
       "length": 60,
       "value": "\"Client respomse options: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "Dictionary",
-      "offset": 10489,
+      "offset": 10559,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 10493,
+      "offset": 10563,
       "length": 1,
       "value": "\"\n\""
     },

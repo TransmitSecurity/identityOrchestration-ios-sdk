@@ -11,6 +11,12 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.1 - March 2024
+### Content
+#### New Features
+1. Support for unified server URL.
+2. SDK public APIs have been aligned by adding the 'TSIdo' prefix.
+
 ## 1.1.0 - March 2024
 ### Content
 #### New Features
