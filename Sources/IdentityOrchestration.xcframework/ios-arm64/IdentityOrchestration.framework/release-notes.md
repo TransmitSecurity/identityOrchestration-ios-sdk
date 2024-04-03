@@ -11,6 +11,11 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.2 - April 2024
+### Content
+#### New Features
+1. Escape options bug fix.
+
 ## 1.1.1 - March 2024
 ### Content
 #### New Features
