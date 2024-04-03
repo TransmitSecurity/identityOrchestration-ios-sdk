@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     #
   
     spec.name         = "IdentityOrchestration"
-    spec.version      = "1.1.1"
+    spec.version      = "1.1.2"
     spec.summary      = "The Identity Orchestration SDK is a client-side JavaScript SDK that allows you to communicate with the Orchestration server, run journeys, and submit client input. Contact your Transmit representative to learn more about our orchestration capabilities."
     spec.homepage     = "https://www.transmitsecurity.co.il"
   
