@@ -11,6 +11,12 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.3 - April 2024
+### Content
+#### New Features
+1. Added email and SMS OTP actions.
+2. Implemented auto-reply for device actions.
+
 ## 1.1.2 - April 2024
 ### Content
 #### New Features

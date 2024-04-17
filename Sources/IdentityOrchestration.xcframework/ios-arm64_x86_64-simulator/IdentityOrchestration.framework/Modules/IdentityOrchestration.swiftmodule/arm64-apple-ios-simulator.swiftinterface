@@ -26,6 +26,12 @@ public enum TSIdoJourneyError : Swift.Error {
   case clientResponseNotValid
   case serverError((any Swift.Error)?)
   case initializationError
+  case invalidCredentials
+}
+public struct TSIdoSdkError {
+  public let errorCode: IdentityOrchestration.TSIdoJourneyError
+  public let description: Swift.String
+  public let data: Any?
 }
 extension IdentityOrchestration.TSIdoClientResponseOptionType {
   public var id: Swift.String {
@@ -39,6 +45,7 @@ public enum TSIdoClientResponseOptionType : Swift.Codable {
   case clientInput
   case cancel
   case fail
+  case resend
   case custom(id: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -68,6 +75,8 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case validateDeviceAction
   case nativeBiometricsRegistration
   case nativeBiometricsAuthenticaton
+  case emailOTPAuthentication
+  case smsOTPAuthentication
   case custom(name: Swift.String)
 }
 public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
@@ -76,8 +85,8 @@ public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
   var label: Swift.String { get }
 }
 public protocol TSIdoServiceResponse {
-  var rejectionReason: Swift.String? { get }
   var data: [Swift.String : Any]? { get }
+  var errorData: IdentityOrchestration.TSIdoSdkError? { get }
   var journeyStepId: IdentityOrchestration.TSIdoJourneyActionType? { get }
   var clientResponseOptions: [Swift.String : any IdentityOrchestration.TSIdoClientResponseOption]? { get }
   var token: Swift.String? { get }
