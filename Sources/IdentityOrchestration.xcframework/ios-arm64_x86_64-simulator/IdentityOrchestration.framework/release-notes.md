@@ -11,6 +11,12 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.4 - May 2024
+### Content
+#### New Features
+1. Added support for a login form action.
+2. Handle journey state.
+
 ## 1.1.3 - April 2024
 ### Content
 #### New Features

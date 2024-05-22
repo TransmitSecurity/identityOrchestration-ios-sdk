@@ -22,11 +22,13 @@ public struct TSIdoStartJourneyOptions {
 }
 public enum TSIdoJourneyError : Swift.Error {
   case notInitialized
+  case noActiveJourney
   case networkError
   case clientResponseNotValid
   case serverError((any Swift.Error)?)
   case initializationError
   case invalidCredentials
+  case expiredOTPPasscode
 }
 public struct TSIdoSdkError {
   public let errorCode: IdentityOrchestration.TSIdoJourneyError
@@ -104,6 +106,7 @@ public protocol TSIdoDelegate : AnyObject {
     get
     set(newDelegate)
   }
+  public static func initialize(clientId: Swift.String, options: IdentityOrchestration.TSIdoInitJourneyOptions)
   public static func initializeSDK() throws
   public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.TSIdoStartJourneyOptions? = nil)
   public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil)
