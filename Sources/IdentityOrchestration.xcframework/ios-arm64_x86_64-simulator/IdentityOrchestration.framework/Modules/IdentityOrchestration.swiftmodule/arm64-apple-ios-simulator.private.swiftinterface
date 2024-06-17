@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IdentityOrchestration
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IdentityOrchestration
 import Combine
 import Foundation
 @_exported import IdentityOrchestration
@@ -13,7 +12,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
 public struct TSIdoInitJourneyOptions {
-  public init(serverPath: Swift.String, applicationId: Swift.String)
+  public init(serverPath: Swift.String, resource: Swift.String? = nil)
 }
 public struct TSIdoStartJourneyOptions {
   public let additionalParams: [Swift.String : Any]?
@@ -30,7 +29,7 @@ public enum TSIdoJourneyError : Swift.Error {
   case invalidCredentials
   case expiredOTPPasscode
 }
-public struct TSIdoSdkError {
+public struct TSIdoSdkError : Swift.Error {
   public let errorCode: IdentityOrchestration.TSIdoJourneyError
   public let description: Swift.String
   public let data: Any?
@@ -93,6 +92,7 @@ public protocol TSIdoServiceResponse {
   var clientResponseOptions: [Swift.String : any IdentityOrchestration.TSIdoClientResponseOption]? { get }
   var token: Swift.String? { get }
 }
+public typealias TSIdoGenerateDebugPinCompletion = (Swift.Result<Swift.String, IdentityOrchestration.TSIdoJourneyError>) -> Swift.Void
 extension Swift.Encodable {
   public var toDictionary: [Swift.String : Any]? {
     get
@@ -101,7 +101,7 @@ extension Swift.Encodable {
 public protocol TSIdoDelegate : AnyObject {
   func TSIdoDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.TSIdoServiceResponse, IdentityOrchestration.TSIdoJourneyError>)
 }
-@_hasMissingDesignatedInitializers final public class TSIdo {
+@_hasMissingDesignatedInitializers final public class TSIdo : TSCoreSDK.TSLogConfigurable {
   public static var delegate: (any IdentityOrchestration.TSIdoDelegate)? {
     get
     set(newDelegate)
@@ -110,5 +110,6 @@ public protocol TSIdoDelegate : AnyObject {
   public static func initializeSDK() throws
   public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.TSIdoStartJourneyOptions? = nil)
   public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil)
+  public static func generateDebugPin(_ completion: @escaping IdentityOrchestration.TSIdoGenerateDebugPinCompletion)
   @objc deinit
 }

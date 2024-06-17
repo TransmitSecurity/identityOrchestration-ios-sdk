@@ -11,6 +11,14 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.5 - June 2024
+### Content
+#### New Features
+1. Enabled SDK logs in application (TSLogger).
+2. Application ID parameter removed from SDK initialization.
+3. Generate debug PIN API added. 
+4. Allow resource to be provided via initialization parameters.
+
 ## 1.1.4 - May 2024
 ### Content
 #### New Features
