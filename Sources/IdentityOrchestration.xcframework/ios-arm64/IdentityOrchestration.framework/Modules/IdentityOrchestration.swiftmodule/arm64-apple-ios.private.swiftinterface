@@ -11,7 +11,12 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
+public struct TSIdoConfiguration {
+  public init(configurationFileName: Swift.String)
+}
 public struct TSIdoInitJourneyOptions {
+  public var serverPath: Swift.String
+  public let resource: Swift.String?
   public init(serverPath: Swift.String, resource: Swift.String? = nil)
 }
 public struct TSIdoStartJourneyOptions {
@@ -78,6 +83,8 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case nativeBiometricsAuthenticaton
   case emailOTPAuthentication
   case smsOTPAuthentication
+  case emailValidation
+  case smsValidation
   case custom(name: Swift.String)
 }
 public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
@@ -107,7 +114,7 @@ public protocol TSIdoDelegate : AnyObject {
     set(newDelegate)
   }
   public static func initialize(clientId: Swift.String, options: IdentityOrchestration.TSIdoInitJourneyOptions)
-  public static func initializeSDK() throws
+  public static func initializeSDK(configuration: IdentityOrchestration.TSIdoConfiguration? = nil) throws
   public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.TSIdoStartJourneyOptions? = nil)
   public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil)
   public static func generateDebugPin(_ completion: @escaping IdentityOrchestration.TSIdoGenerateDebugPinCompletion)

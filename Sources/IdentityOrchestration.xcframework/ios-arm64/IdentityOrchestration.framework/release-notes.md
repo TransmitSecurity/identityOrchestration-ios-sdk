@@ -11,6 +11,13 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.6 - July 2024
+### Content
+#### New Features
+1. Validate email and SMS actions support added.
+#### Bug Fixes
+1. Fixed bug where error returned when journey fails on start instead of rejection.
+
 ## 1.1.5 - June 2024
 ### Content
 #### New Features
