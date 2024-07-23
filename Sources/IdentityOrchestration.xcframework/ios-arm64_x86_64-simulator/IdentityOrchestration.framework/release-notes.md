@@ -11,6 +11,12 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.7 - July 2024
+### Content
+
+#### Bug Fixes
+1. Fixed resend OTP bug in validate email/SMS actions.
+
 ## 1.1.6 - July 2024
 ### Content
 #### New Features
