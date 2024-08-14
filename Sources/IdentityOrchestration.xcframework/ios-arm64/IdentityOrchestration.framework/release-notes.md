@@ -11,9 +11,15 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.8 - August 2024
+### Content
+#### New Features
+1. Delete mobile biometrics API added.
+#### Bug Fixes
+1. Providing an empty data object in submit client response.
+
 ## 1.1.7 - July 2024
 ### Content
-
 #### Bug Fixes
 1. Fixed resend OTP bug in validate email/SMS actions.
 
