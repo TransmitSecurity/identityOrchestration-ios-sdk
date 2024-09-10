@@ -86,6 +86,7 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case emailValidation
   case smsValidation
   case deleteMobileBiometrics
+  case totpRegistration
   case custom(name: Swift.String)
 }
 public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {

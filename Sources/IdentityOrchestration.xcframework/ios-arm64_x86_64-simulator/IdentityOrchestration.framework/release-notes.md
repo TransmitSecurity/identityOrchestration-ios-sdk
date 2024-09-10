@@ -11,6 +11,11 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.9 - September 2024
+### Content
+#### New Features
+1. Added support for register TOTP action.
+
 ## 1.1.8 - August 2024
 ### Content
 #### New Features

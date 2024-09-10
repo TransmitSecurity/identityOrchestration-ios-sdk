@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Z1IduLD4r3t3AtLK6CAWxyZ372w=
+		nZvIj9wOqrGIl/3vAk0sQ4m/61E=
 		</data>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		htN/hwXJOgUcIe6A4HikPfCTloE=
+		AV7cwbCGdgbU1Jx7wNCaM8xN6ls=
 		</data>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		YdCkiobT09ctcYguNQqoa8se5sU=
+		7eGgd2bSlOAzWGpoU8B3iVfF9Q8=
 		</data>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		YdCkiobT09ctcYguNQqoa8se5sU=
+		7eGgd2bSlOAzWGpoU8B3iVfF9Q8=
 		</data>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qJXXL/W5cxq6JLg+rzmsoFDLNf8=
+		xVHF6iEPasH1zrMNO0Ufk051LVc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>release-notes.md</key>
 		<data>
-		oHTOdSJnx8xow+W9QJTF3WB1908=
+		bae7HFoD4YwGPp/7MH6vHkxrwc8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -69,14 +69,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k2JESiOCsLnYlVzBRX7/Zo+VXOr61l4rksgH9PljQgo=
+			PraxtUcwkqPBjmhC/9AGORnV+Fd39P8XwEMrf5mQ21M=
 			</data>
 		</dict>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/mRJh+Cxty5hwqp2cPhkeEChdLZMKRmusWZrOjhTVM=
+			+28Jr7kbyRtGOwtu9lzTfdW/Yulb7bPndmuu9engChQ=
 			</data>
 		</dict>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -90,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/mRJh+Cxty5hwqp2cPhkeEChdLZMKRmusWZrOjhTVM=
+			+28Jr7kbyRtGOwtu9lzTfdW/Yulb7bPndmuu9engChQ=
 			</data>
 		</dict>
 		<key>Modules/IdentityOrchestration.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MUhWpsGgK+rWtR8jy72Mfij37R9zHgD+ROMJuBDJJHI=
+			hN4M4bJomibf39vUiRreRQfZVXUveNvopeBEec1wlJ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6xKI/p8nqWq05Rgx+cqLpaNqU9degMHWJpwxmbpVoc0=
+			xV3TMNEuPtPmR4fKaZxHxJGi52hALAuZhcKjnNxT6lY=
 			</data>
 		</dict>
 	</dict>
