@@ -87,12 +87,14 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case smsValidation
   case deleteMobileBiometrics
   case totpRegistration
+  case totpSigningTransaction
   case custom(name: Swift.String)
 }
 public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
   var type: IdentityOrchestration.TSIdoClientResponseOptionType { get }
   var id: Swift.String { get }
   var label: Swift.String { get }
+  var schema: [Swift.String : Any]? { get }
 }
 public protocol TSIdoServiceResponse {
   var data: [Swift.String : Any]? { get }

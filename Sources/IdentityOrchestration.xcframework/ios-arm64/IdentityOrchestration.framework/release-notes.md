@@ -11,6 +11,12 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.10 - October 2024
+### Content
+#### New Features
+1. Added schema object to the response options.
+2. Added API for TOTP transaction signing with challenge.
+
 ## 1.1.9 - September 2024
 ### Content
 #### New Features
