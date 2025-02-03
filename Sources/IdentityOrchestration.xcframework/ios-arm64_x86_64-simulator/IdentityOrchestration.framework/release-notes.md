@@ -11,6 +11,13 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.11 - February 2025
+### Content
+#### New Features
+1. Added support  for sign transaction with Native Biometrics.
+2. Added support for sign transaction with Passkeys.
+3. Added Local parameter to start journey configuration.
+
 ## 1.1.10 - October 2024
 ### Content
 #### New Features

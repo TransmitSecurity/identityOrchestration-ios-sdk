@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IdentityOrchestration
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IdentityOrchestration
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
 import Foundation
 @_exported import IdentityOrchestration
@@ -17,7 +18,9 @@ public struct TSIdoConfiguration {
 public struct TSIdoInitJourneyOptions {
   public var serverPath: Swift.String
   public let resource: Swift.String?
-  public init(serverPath: Swift.String, resource: Swift.String? = nil)
+  public let pollingTimeout: Swift.Int?
+  public let locale: Swift.String?
+  public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil)
 }
 public struct TSIdoStartJourneyOptions {
   public let additionalParams: [Swift.String : Any]?
@@ -33,6 +36,7 @@ public enum TSIdoJourneyError : Swift.Error {
   case initializationError
   case invalidCredentials
   case expiredOTPPasscode
+  case missingRequestIdInApprovalPayload
 }
 public struct TSIdoSdkError : Swift.Error {
   public let errorCode: IdentityOrchestration.TSIdoJourneyError
@@ -88,13 +92,15 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case deleteMobileBiometrics
   case totpRegistration
   case totpSigningTransaction
+  case webAuthnTransactionSigning
+  case nativeBiometricsTransactionSigning
   case custom(name: Swift.String)
 }
 public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
   var type: IdentityOrchestration.TSIdoClientResponseOptionType { get }
   var id: Swift.String { get }
   var label: Swift.String { get }
-  var schema: [Swift.String : Any]? { get }
+  var schema: [Any]? { get }
 }
 public protocol TSIdoServiceResponse {
   var data: [Swift.String : Any]? { get }
