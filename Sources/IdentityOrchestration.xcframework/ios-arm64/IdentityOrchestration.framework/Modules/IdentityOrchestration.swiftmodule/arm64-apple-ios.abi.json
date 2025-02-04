@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "IdentityOrchestration",
+    "printedName": "IdentityOrchestration",
     "children": [
       {
         "kind": "Import",
@@ -67,6 +67,30 @@
       },
       {
         "kind": "Import",
+        "name": "TSCoreSDK",
+        "printedName": "TSCoreSDK",
+        "declKind": "Import",
+        "moduleName": "IdentityOrchestration"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IdentityOrchestration",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TSCoreSDK",
+        "printedName": "TSCoreSDK",
+        "declKind": "Import",
+        "moduleName": "IdentityOrchestration"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -150,6 +174,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IdentityOrchestration"
+      },
+      {
+        "kind": "Import",
+        "name": "TSCoreSDK",
+        "printedName": "TSCoreSDK",
         "declKind": "Import",
         "moduleName": "IdentityOrchestration"
       },
@@ -254,6 +285,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -409,9 +456,131 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "pollingTimeout",
+            "printedName": "pollingTimeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV14pollingTimeoutSiSgvp",
+            "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV14pollingTimeoutSiSgvp",
+            "moduleName": "IdentityOrchestration",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV14pollingTimeoutSiSgvg",
+                "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV14pollingTimeoutSiSgvg",
+                "moduleName": "IdentityOrchestration",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locale",
+            "printedName": "locale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV6localeSSSgvp",
+            "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV6localeSSSgvp",
+            "moduleName": "IdentityOrchestration",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV6localeSSSgvg",
+                "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV6localeSSSgvg",
+                "moduleName": "IdentityOrchestration",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(serverPath:resource:)",
+            "printedName": "init(serverPath:resource:pollingTimeout:locale:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -439,11 +608,41 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV10serverPath8resourceACSS_SSSgtcfc",
-            "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV10serverPath8resourceACSS_SSSgtcfc",
+            "usr": "s:21IdentityOrchestration23TSIdoInitJourneyOptionsV10serverPath8resource14pollingTimeout6localeACSS_SSSgSiSgAHtcfc",
+            "mangledName": "$s21IdentityOrchestration23TSIdoInitJourneyOptionsV10serverPath8resource14pollingTimeout6localeACSS_SSSgSiSgAHtcfc",
             "moduleName": "IdentityOrchestration",
             "declAttributes": [
               "AccessControl"
@@ -458,6 +657,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -684,6 +899,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1031,6 +1262,46 @@
             "declAttributes": [
               "RawDocComment"
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "missingRequestIdInApprovalPayload",
+            "printedName": "missingRequestIdInApprovalPayload",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyError.Type) -> IdentityOrchestration.TSIdoJourneyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSIdoJourneyError",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                    "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSIdoJourneyError",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyError",
+                        "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21IdentityOrchestration17TSIdoJourneyErrorO33missingRequestIdInApprovalPayloadyA2CmF",
+            "mangledName": "$s21IdentityOrchestration17TSIdoJourneyErrorO33missingRequestIdInApprovalPayloadyA2CmF",
+            "moduleName": "IdentityOrchestration",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           }
         ],
         "declKind": "Enum",
@@ -1042,6 +1313,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -1222,6 +1507,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -1601,6 +1900,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -2388,6 +2701,86 @@
           },
           {
             "kind": "Var",
+            "name": "webAuthnTransactionSigning",
+            "printedName": "webAuthnTransactionSigning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO26webAuthnTransactionSigningyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO26webAuthnTransactionSigningyA2CmF",
+            "moduleName": "IdentityOrchestration",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nativeBiometricsTransactionSigning",
+            "printedName": "nativeBiometricsTransactionSigning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IdentityOrchestration.TSIdoJourneyActionType.Type) -> IdentityOrchestration.TSIdoJourneyActionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSIdoJourneyActionType",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                    "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IdentityOrchestration.TSIdoJourneyActionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSIdoJourneyActionType",
+                        "printedName": "IdentityOrchestration.TSIdoJourneyActionType",
+                        "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21IdentityOrchestration22TSIdoJourneyActionTypeO34nativeBiometricsTransactionSigningyA2CmF",
+            "mangledName": "$s21IdentityOrchestration22TSIdoJourneyActionTypeO34nativeBiometricsTransactionSigningyA2CmF",
+            "moduleName": "IdentityOrchestration",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "custom",
             "printedName": "custom",
             "children": [
@@ -2576,6 +2969,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -2776,34 +3183,28 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "name": "Array",
+                    "printedName": "[Any]",
                     "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
                       {
                         "kind": "TypeNominal",
                         "name": "ProtocolComposition",
                         "printedName": "Any"
                       }
                     ],
-                    "usr": "s:SD"
+                    "usr": "s:Sa"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSDySSypGSgvp",
-            "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSDySSypGSgvp",
+            "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSayypGSgvp",
+            "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSayypGSgvp",
             "moduleName": "IdentityOrchestration",
             "protocolReq": true,
             "declAttributes": [
@@ -2818,34 +3219,28 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Any]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "name": "Array",
+                        "printedName": "[Any]",
                         "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
                           {
                             "kind": "TypeNominal",
                             "name": "ProtocolComposition",
                             "printedName": "Any"
                           }
                         ],
-                        "usr": "s:SD"
+                        "usr": "s:Sa"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSDySSypGSgvg",
-                "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSDySSypGSgvg",
+                "usr": "s:21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSayypGSgvg",
+                "mangledName": "$s21IdentityOrchestration25TSIdoClientResponseOptionP6schemaSayypGSgvg",
                 "moduleName": "IdentityOrchestration",
                 "genericSig": "<τ_0_0 where τ_0_0 : IdentityOrchestration.TSIdoClientResponseOption>",
                 "sugared_genericSig": "<Self where Self : IdentityOrchestration.TSIdoClientResponseOption>",
@@ -2867,6 +3262,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -3252,6 +3661,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3547,7 +3972,40 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IdentityOrchestration",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TSCoreSDK",
+        "printedName": "TSCoreSDK",
+        "declKind": "Import",
+        "moduleName": "IdentityOrchestration"
       },
       {
         "kind": "Import",
@@ -3933,6 +4391,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TSLogConfigurable",
             "printedName": "TSLogConfigurable",
             "usr": "s:9TSCoreSDK17TSLogConfigurableP",
@@ -4090,1502 +4562,1133 @@
         "usr": "s:SE",
         "mangledName": "$sSE",
         "moduleName": "Swift",
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
       "offset": 3895,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
       "offset": 6993,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
       "offset": 9611,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
       "offset": 9616,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/UILabelExtension.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/TSJourneyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 11,
+      "value": "\"pushToken\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/UILabelExtension.swift",
       "kind": "FloatLiteral",
       "offset": 221,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/UILabelExtension.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/UILabelExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 243,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 13,
       "value": "\"start_token\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 15,
       "value": "\"base_endpoint\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
-      "kind": "StringLiteral",
-      "offset": 599,
-      "length": 13,
-      "value": "\"start_token\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
-      "kind": "StringLiteral",
-      "offset": 649,
-      "length": 15,
-      "value": "\"base_endpoint\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
       "kind": "StringLiteral",
       "offset": 854,
       "length": 13,
       "value": "\"vendor_name\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
-      "kind": "StringLiteral",
-      "offset": 854,
-      "length": 13,
-      "value": "\"vendor_name\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
       "kind": "StringLiteral",
       "offset": 1222,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/IDV\/IdvController.swift",
-      "kind": "StringLiteral",
-      "offset": 1222,
-      "length": 11,
-      "value": "\"sessionId\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 15,
       "value": "\"client_secret\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 10,
       "value": "\"tenantId\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 536,
       "length": 9,
       "value": "\"package\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 7,
       "value": "\"build\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 651,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 691,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 741,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 792,
       "length": 12,
       "value": "\"Set-Cookie\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 838,
       "length": 20,
       "value": "\"client_credentials\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 8,
       "value": "\"Bearer\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 951,
       "length": 4,
       "value": "\"ok\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 988,
       "length": 5,
       "value": "\"sdf\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1025,
       "length": 12,
       "value": "\"mobile_sdk\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1110,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1191,
       "length": 3,
       "value": "402"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1227,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1262,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "BooleanLiteral",
       "offset": 1345,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1378,
       "length": 18,
       "value": "\"IDFConfiguration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1451,
       "length": 18,
       "value": "\"TransmitSecurity\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoGenerateDebugPinRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoGenerateDebugPinRequest.swift",
       "kind": "StringLiteral",
       "offset": 337,
       "length": 11,
       "value": "\"debug_pin\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoGenerateDebugPinRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 337,
-      "length": 11,
-      "value": "\"debug_pin\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoGenerateDebugPinRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoGenerateDebugPinRequest.swift",
       "kind": "StringLiteral",
       "offset": 643,
       "length": 32,
       "value": "\"api\/v2\/auth\/create_debug_token\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "IntegerLiteral",
-      "offset": 2343,
+      "offset": 2765,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "IntegerLiteral",
-      "offset": 2389,
+      "offset": 2811,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2343,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2389,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2343,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2389,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2722,
+      "offset": 3144,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4864,
+      "offset": 5286,
       "length": 16,
       "value": "\"action:success\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4921,
+      "offset": 5343,
       "length": 18,
       "value": "\"action:rejection\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4982,
+      "offset": 5404,
       "length": 20,
       "value": "\"action:information\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5044,
+      "offset": 5466,
       "length": 20,
       "value": "\"action:debug_break\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5116,
+      "offset": 5538,
       "length": 24,
       "value": "\"action:wait_for_ticket\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5204,
+      "offset": 5626,
       "length": 27,
       "value": "\"action:drs_trigger_action\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5283,
+      "offset": 5705,
       "length": 24,
       "value": "\"action:id_verification\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5359,
+      "offset": 5781,
       "length": 42,
       "value": "\"transmit_platform_web_authn_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5453,
+      "offset": 5875,
       "length": 39,
       "value": "\"transmit_platform_device_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5544,
+      "offset": 5966,
       "length": 37,
       "value": "\"transmit_platform_device_validation\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5641,
+      "offset": 6063,
       "length": 50,
       "value": "\"transmit_platform_mobile_biometrics_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5753,
+      "offset": 6175,
       "length": 52,
       "value": "\"transmit_platform_mobile_biometrics_authentication\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5859,
+      "offset": 6281,
       "length": 44,
       "value": "\"transmit_platform_email_otp_authentication\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 5955,
+      "offset": 6377,
       "length": 42,
       "value": "\"transmit_platform_sms_otp_authentication\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6044,
+      "offset": 6466,
       "length": 36,
       "value": "\"transmit_platform_email_validation\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6126,
+      "offset": 6548,
       "length": 34,
       "value": "\"transmit_platform_sms_validation\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6214,
+      "offset": 6636,
       "length": 44,
       "value": "\"transmit_platform_delete_mobile_biometrics\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6306,
+      "offset": 6728,
       "length": 37,
       "value": "\"transmit_platform_totp_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6397,
+      "offset": 6819,
       "length": 44,
       "value": "\"transmit_platform_transaction_signing_totp\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6921,
+      "length": 48,
+      "value": "\"transmit_platform_transaction_signing_webauthn\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/API\/IdoTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7035,
+      "length": 57,
+      "value": "\"transmit_platform_mobile_biometrics_transaction_signing\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
       "kind": "Dictionary",
       "offset": 448,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1752,
+      "offset": 1668,
       "length": 19,
       "value": "\"collection_result\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1856,
+      "offset": 1772,
       "length": 19,
       "value": "\"policy_request_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1752,
-      "length": 19,
-      "value": "\"collection_result\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1856,
-      "length": 19,
-      "value": "\"policy_request_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartJourneyRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2139,
       "length": 30,
       "value": "\"api\/v2\/auth\/anonymous_invoke\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 11,
       "value": "\"escape_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
       "kind": "StringLiteral",
       "offset": 786,
       "length": 15,
       "value": "\"escape_params\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 738,
-      "length": 11,
-      "value": "\"escape_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 786,
-      "length": 15,
-      "value": "\"escape_params\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
       "kind": "StringLiteral",
       "offset": 2041,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2041,
-      "length": 14,
-      "value": "\"assertion_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2638,
-      "length": 12,
-      "value": "\"IdentityOrchestration.UserIdHeader\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
       "kind": "StringLiteral",
       "offset": 3809,
       "length": 9,
       "value": "\"flow_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3809,
-      "length": 9,
-      "value": "\"flow_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3235,
-      "length": 12,
-      "value": "\"IdentityOrchestration.FlowIdHeader\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
       "kind": "StringLiteral",
       "offset": 4467,
       "length": 6,
       "value": "\"poll\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoSubmitClientResponseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 4467,
-      "length": 6,
-      "value": "\"poll\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 13,
       "value": "\"phone_input\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 11,
       "value": "\"otp_input\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
       "offset": 1275,
       "length": 11,
       "value": "\"kba_input\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Mocks\/IdoResponseMocks.swift",
       "kind": "StringLiteral",
       "offset": 1771,
       "length": 9,
       "value": "\"success\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2174,
       "length": 12,
       "value": "\"error_code\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2215,
       "length": 15,
       "value": "\"error_message\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2292,
       "length": 9,
       "value": "\"form_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2174,
-      "length": 12,
-      "value": "\"error_code\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2215,
-      "length": 15,
-      "value": "\"error_message\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2292,
-      "length": 9,
-      "value": "\"form_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2388,
       "length": 10,
       "value": "\"app_data\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2447,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2523,
       "length": 9,
       "value": "\"form_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2388,
-      "length": 10,
-      "value": "\"app_data\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2447,
-      "length": 14,
-      "value": "\"assertion_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2523,
-      "length": 9,
-      "value": "\"form_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2859,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 2900,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2859,
-      "length": 11,
-      "value": "\"device_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2900,
-      "length": 12,
-      "value": "\"session_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3342,
       "length": 12,
       "value": "\"login_form\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3459,
       "length": 17,
       "value": "\"wait_for_ticket\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3527,
       "length": 29,
       "value": "\"crypto_binding_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3592,
       "length": 13,
       "value": "\"debug_break\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3642,
       "length": 14,
       "value": "\"transmit_acp\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3685,
       "length": 5,
       "value": "\"kyc\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3736,
       "length": 42,
       "value": "\"transmit_platform_web_authn_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3824,
       "length": 39,
       "value": "\"transmit_platform_device_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3909,
       "length": 37,
       "value": "\"transmit_platform_device_validation\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 3986,
       "length": 34,
       "value": "\"transmit_platform_authentication\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4074,
       "length": 50,
       "value": "\"transmit_platform_mobile_biometrics_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4180,
       "length": 52,
       "value": "\"transmit_platform_mobile_biometrics_authentication\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4280,
       "length": 44,
       "value": "\"transmit_platform_email_otp_authentication\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4370,
       "length": 42,
       "value": "\"transmit_platform_sms_otp_authentication\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4456,
       "length": 36,
       "value": "\"transmit_platform_email_validation\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4534,
       "length": 34,
       "value": "\"transmit_platform_sms_validation\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4616,
       "length": 44,
       "value": "\"transmit_platform_delete_mobile_biometrics\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4702,
       "length": 37,
       "value": "\"transmit_platform_totp_registration\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
       "offset": 4787,
       "length": 44,
       "value": "\"transmit_platform_transaction_signing_totp\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3342,
-      "length": 12,
-      "value": "\"login_form\""
+      "offset": 4883,
+      "length": 48,
+      "value": "\"transmit_platform_transaction_signing_webauthn\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3459,
-      "length": 17,
-      "value": "\"wait_for_ticket\""
+      "offset": 4991,
+      "length": 57,
+      "value": "\"transmit_platform_mobile_biometrics_transaction_signing\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3527,
-      "length": 29,
-      "value": "\"crypto_binding_registration\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 3592,
-      "length": 13,
-      "value": "\"debug_break\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 3642,
-      "length": 14,
-      "value": "\"transmit_acp\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 3685,
-      "length": 5,
-      "value": "\"kyc\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 3736,
-      "length": 42,
-      "value": "\"transmit_platform_web_authn_registration\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 3824,
-      "length": 39,
-      "value": "\"transmit_platform_device_registration\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 3909,
-      "length": 37,
-      "value": "\"transmit_platform_device_validation\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 3986,
-      "length": 34,
-      "value": "\"transmit_platform_authentication\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4074,
-      "length": 50,
-      "value": "\"transmit_platform_mobile_biometrics_registration\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4180,
-      "length": 52,
-      "value": "\"transmit_platform_mobile_biometrics_authentication\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4280,
-      "length": 44,
-      "value": "\"transmit_platform_email_otp_authentication\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4370,
-      "length": 42,
-      "value": "\"transmit_platform_sms_otp_authentication\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4456,
-      "length": 36,
-      "value": "\"transmit_platform_email_validation\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4534,
-      "length": 34,
-      "value": "\"transmit_platform_sms_validation\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4616,
-      "length": 44,
-      "value": "\"transmit_platform_delete_mobile_biometrics\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4702,
-      "length": 37,
-      "value": "\"transmit_platform_totp_registration\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 4787,
-      "length": 44,
-      "value": "\"transmit_platform_transaction_signing_totp\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 7935,
+      "offset": 8152,
       "length": 10,
       "value": "\"app_data\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8002,
+      "offset": 8219,
       "length": 14,
       "value": "\"assertion_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8090,
+      "offset": 8307,
       "length": 9,
       "value": "\"form_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8126,
+      "offset": 8343,
       "length": 11,
       "value": "\"ticket_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8169,
+      "offset": 8386,
       "length": 15,
       "value": "\"raw_ticket_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8219,
+      "offset": 8436,
       "length": 17,
       "value": "\"polling_timeout\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8267,
+      "offset": 8484,
       "length": 13,
       "value": "\"action_type\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8316,
+      "offset": 8533,
       "length": 18,
       "value": "\"device_challenge\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7935,
-      "length": 10,
-      "value": "\"app_data\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 8002,
-      "length": 14,
-      "value": "\"assertion_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 8090,
-      "length": 9,
-      "value": "\"form_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 8126,
-      "length": 11,
-      "value": "\"ticket_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 8169,
-      "length": 15,
-      "value": "\"raw_ticket_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 8219,
-      "length": 17,
-      "value": "\"polling_timeout\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 8267,
-      "length": 13,
-      "value": "\"action_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 8316,
-      "length": 18,
-      "value": "\"device_challenge\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11264,
+      "offset": 11481,
       "length": 11,
       "value": "\"json_data\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11330,
+      "offset": 11547,
       "length": 14,
       "value": "\"control_flow\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11383,
+      "offset": 11600,
       "length": 21,
       "value": "\"assertions_complete\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11443,
+      "offset": 11660,
       "length": 22,
       "value": "\"assertion_error_code\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11507,
+      "offset": 11724,
       "length": 25,
       "value": "\"assertion_error_message\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11566,
+      "offset": 11783,
       "length": 16,
       "value": "\"rejection_data\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11614,
+      "offset": 11831,
       "length": 14,
       "value": "\"failure_data\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11663,
+      "offset": 11880,
       "length": 17,
       "value": "\"change_detected\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
       "kind": "StringLiteral",
-      "offset": 11264,
-      "length": 11,
-      "value": "\"json_data\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11330,
-      "length": 14,
-      "value": "\"control_flow\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11383,
-      "length": 21,
-      "value": "\"assertions_complete\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11443,
-      "length": 22,
-      "value": "\"assertion_error_code\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11507,
-      "length": 25,
-      "value": "\"assertion_error_message\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11566,
-      "length": 16,
-      "value": "\"rejection_data\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11614,
-      "length": 14,
-      "value": "\"failure_data\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 11663,
-      "length": 17,
-      "value": "\"change_detected\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 12523,
+      "offset": 12724,
       "length": 14,
       "value": "\"display_name\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/FlexIdJourneyResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 12523,
-      "length": 14,
-      "value": "\"display_name\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
       "kind": "StringLiteral",
       "offset": 235,
       "length": 18,
       "value": "\"ts:idosdk:device\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
       "kind": "StringLiteral",
       "offset": 752,
       "length": 21,
       "value": "\"platform_device_key\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
       "kind": "StringLiteral",
       "offset": 807,
       "length": 20,
       "value": "\"platform_device_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
-      "kind": "StringLiteral",
-      "offset": 752,
-      "length": 21,
-      "value": "\"platform_device_key\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
-      "kind": "StringLiteral",
-      "offset": 807,
-      "length": 20,
-      "value": "\"platform_device_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
       "kind": "StringLiteral",
       "offset": 1369,
       "length": 20,
       "value": "\"platform_device_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Actions\/CryptoBinding\/CryptoBindingController.swift",
-      "kind": "StringLiteral",
-      "offset": 1369,
-      "length": 20,
-      "value": "\"platform_device_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 21,
       "value": "\"default_application\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
+      "kind": "StringLiteral",
+      "offset": 12448,
+      "length": 13,
+      "value": "\"auth_req_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
       "offset": 403,
       "length": 11,
       "value": "\"ticket_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 17,
       "value": "\"polling_timeout\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
-      "kind": "StringLiteral",
-      "offset": 403,
-      "length": 11,
-      "value": "\"ticket_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/JourneyManager\/Journey\/IdoJourney.swift",
-      "kind": "StringLiteral",
-      "offset": 471,
-      "length": 17,
-      "value": "\"polling_timeout\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/DictionaryExtension.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Utils\/Extensions\/DictionaryExtension.swift",
       "kind": "BooleanLiteral",
       "offset": 538,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartApprovalJourneyRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 19,
+      "value": "\"collection_result\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartApprovalJourneyRequest.swift",
+      "kind": "Dictionary",
+      "offset": 637,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/IdoStartApprovalJourneyRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2035,
+      "length": 28,
+      "value": "\"api\/v2\/auth\/mobile_approve\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 1886,
+      "offset": 1860,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 1918,
+      "offset": 1892,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 1886,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1918,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1886,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1918,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2212,
+      "offset": 2186,
       "length": 4,
       "value": "4001"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2212,
-      "length": 4,
-      "value": "4001"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Responses\/IdoJourneyResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2212,
-      "length": 4,
-      "value": "4001"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
       "kind": "BooleanLiteral",
       "offset": 268,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
       "kind": "Array",
       "offset": 358,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
       "kind": "BooleanLiteral",
       "offset": 443,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
       "kind": "StringLiteral",
       "offset": 801,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Server Configuration\/IdoConfigurationManager.swift",
       "kind": "StringLiteral",
       "offset": 865,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
       "offset": 695,
       "length": 11,
       "value": "\"escape_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 15,
       "value": "\"escape_params\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 695,
+      "offset": 1998,
+      "length": 14,
+      "value": "\"assertion_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 2781,
+      "length": 12,
+      "value": "\"request_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 2836,
+      "length": 22,
+      "value": "\"request_id_signature\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 3760,
+      "length": 15,
+      "value": "\"device_key_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 3815,
+      "length": 19,
+      "value": "\"device_public_key\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 3869,
+      "length": 13,
+      "value": "\"device_type\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 3916,
+      "length": 12,
+      "value": "\"push_token\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 3971,
+      "length": 21,
+      "value": "\"device_manufacturer\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 4028,
+      "length": 14,
+      "value": "\"device_model\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 4075,
       "length": 11,
-      "value": "\"escape_id\""
+      "value": "\"device_os\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 743,
-      "length": 15,
-      "value": "\"escape_params\""
+      "offset": 4126,
+      "length": 19,
+      "value": "\"device_os_version\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 1998,
-      "length": 14,
-      "value": "\"assertion_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
-      "kind": "StringLiteral",
-      "offset": 1998,
-      "length": 14,
-      "value": "\"assertion_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
-      "kind": "StringLiteral",
-      "offset": 2509,
-      "length": 12,
-      "value": "\"IdentityOrchestration.UserIdHeader\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
-      "kind": "StringLiteral",
-      "offset": 3544,
+      "offset": 4908,
       "length": 9,
       "value": "\"flow_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 3544,
+      "offset": 4975,
+      "length": 16,
+      "value": "\"mobile_approve\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 5027,
+      "length": 19,
+      "value": "\"drs_session_token\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 6113,
       "length": 9,
       "value": "\"flow_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 3030,
-      "length": 12,
-      "value": "\"IdentityOrchestration.FlowIdHeader\""
+      "offset": 6689,
+      "length": 16,
+      "value": "\"mobile_approve\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
+      "kind": "StringLiteral",
+      "offset": 7030,
+      "length": 19,
+      "value": "\"drs_session_token\""
     }
   ]
 }
