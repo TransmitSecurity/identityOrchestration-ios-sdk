@@ -22,10 +22,25 @@ public struct TSIdoInitJourneyOptions {
   public let locale: Swift.String?
   public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil)
 }
+public enum TSIdoEncryptionMode {
+  case full
+  case none
+  public static func == (a: IdentityOrchestration.TSIdoEncryptionMode, b: IdentityOrchestration.TSIdoEncryptionMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct TSIdoStartJourneyOptions {
   public let additionalParams: [Swift.String : Any]?
   public let flowId: Swift.String?
-  public init(additionalParams: [Swift.String : Any]?, flowId: Swift.String? = nil)
+  public let encryptionMode: IdentityOrchestration.TSIdoEncryptionMode
+  public init(additionalParams: [Swift.String : Any]? = nil, flowId: Swift.String? = nil, encryptionMode: IdentityOrchestration.TSIdoEncryptionMode = .none)
+}
+public struct IdoError : Swift.Error {
+}
+extension IdentityOrchestration.IdoError {
+  public static let cryptoSessionMissingRequestParameter: IdentityOrchestration.IdoError
 }
 public enum TSIdoJourneyError : Swift.Error {
   case notInitialized
@@ -37,6 +52,7 @@ public enum TSIdoJourneyError : Swift.Error {
   case invalidCredentials
   case expiredOTPPasscode
   case missingRequestIdInApprovalPayload
+  case internalError(IdentityOrchestration.IdoError)
 }
 public struct TSIdoSdkError : Swift.Error {
   public let errorCode: IdentityOrchestration.TSIdoJourneyError
@@ -132,3 +148,5 @@ public protocol TSIdoDelegate : AnyObject {
   public static func setPushToken(_ token: Swift.String) throws
   @objc deinit
 }
+extension IdentityOrchestration.TSIdoEncryptionMode : Swift.Equatable {}
+extension IdentityOrchestration.TSIdoEncryptionMode : Swift.Hashable {}

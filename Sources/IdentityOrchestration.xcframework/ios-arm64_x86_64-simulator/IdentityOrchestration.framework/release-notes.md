@@ -11,6 +11,11 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.14 - March 2025
+### Content
+#### New Features
+1. Added support for double encryption.
+
 ## 1.1.13 - March 2025
 ### Content
 #### New Features
