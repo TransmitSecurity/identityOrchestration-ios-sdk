@@ -100,7 +100,6 @@ iOSInjectionProject/
 **/*_vers.c
 **/ModuleCache/
 **/Index/
-**/Index.noindex/ 
 **/.build/
 **/build/
 
