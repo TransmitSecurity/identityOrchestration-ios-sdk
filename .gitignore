@@ -93,3 +93,16 @@ iOSInjectionProject/
 
 # Ignore Gradle build output directory
 
+**/Build/
+**/Intermediates.noindex/
+**/DerivedSources/
+**/*.build/
+**/*_vers.c
+**/ModuleCache/
+**/Index/
+**/.build/
+**/build/
+
+# CI/CD artifacts
+*.zip
+
