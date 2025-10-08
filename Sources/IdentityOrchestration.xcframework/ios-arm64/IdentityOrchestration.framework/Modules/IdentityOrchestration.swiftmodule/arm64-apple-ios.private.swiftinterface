@@ -22,10 +22,25 @@ public struct TSIdoInitJourneyOptions {
   public let locale: Swift.String?
   public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil)
 }
+public enum TSIdoEncryptionMode {
+  case full
+  case none
+  public static func == (a: IdentityOrchestration.TSIdoEncryptionMode, b: IdentityOrchestration.TSIdoEncryptionMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct TSIdoStartJourneyOptions {
   public let additionalParams: [Swift.String : Any]?
   public let flowId: Swift.String?
-  public init(additionalParams: [Swift.String : Any]?, flowId: Swift.String? = nil)
+  public let encryptionMode: IdentityOrchestration.TSIdoEncryptionMode
+  public init(additionalParams: [Swift.String : Any]? = nil, flowId: Swift.String? = nil, encryptionMode: IdentityOrchestration.TSIdoEncryptionMode = .none)
+}
+public struct IdoError : Swift.Error {
+}
+extension IdentityOrchestration.IdoError {
+  public static let cryptoSessionMissingRequestParameter: IdentityOrchestration.IdoError
 }
 public enum TSIdoJourneyError : Swift.Error {
   case notInitialized
@@ -36,7 +51,9 @@ public enum TSIdoJourneyError : Swift.Error {
   case initializationError
   case invalidCredentials
   case expiredOTPPasscode
+  case maxResendReached
   case missingRequestIdInApprovalPayload
+  case internalError(IdentityOrchestration.IdoError)
 }
 public struct TSIdoSdkError : Swift.Error {
   public let errorCode: IdentityOrchestration.TSIdoJourneyError
@@ -85,8 +102,11 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case validateDeviceAction
   case nativeBiometricsRegistration
   case nativeBiometricsAuthenticaton
+  case selfieAcquisition
   case emailOTPAuthentication
   case smsOTPAuthentication
+  case pushOTPAuthentication
+  case otpValidation
   case emailValidation
   case smsValidation
   case deleteMobileBiometrics
@@ -94,6 +114,9 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case totpSigningTransaction
   case webAuthnTransactionSigning
   case nativeBiometricsTransactionSigning
+  case pinCodeRegistration
+  case pinCodeAuthentication
+  case pinCodeDeletion
   case custom(name: Swift.String)
 }
 public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
@@ -110,6 +133,21 @@ public protocol TSIdoServiceResponse {
   var token: Swift.String? { get }
 }
 public typealias TSIdoGenerateDebugPinCompletion = (Swift.Result<Swift.String, IdentityOrchestration.TSIdoJourneyError>) -> Swift.Void
+public enum TSIdoInstructionType : Swift.String, Swift.Codable {
+  case pinCodeRegistrationCommit
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct TSIdoInstruction : Swift.Codable {
+  public let type: IdentityOrchestration.TSIdoInstructionType
+  public let stepId: Swift.String
+  public let data: [Swift.String : Any]
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 extension Swift.Encodable {
   public var toDictionary: [Swift.String : Any]? {
     get
@@ -119,6 +157,7 @@ public protocol TSIdoDelegate : AnyObject {
   func TSIdoDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.TSIdoServiceResponse, IdentityOrchestration.TSIdoJourneyError>)
 }
 @_hasMissingDesignatedInitializers final public class TSIdo : TSCoreSDK.TSLogConfigurable {
+  public typealias TSSDKInstructionsCallback = (IdentityOrchestration.TSIdoInstruction) -> Swift.Void
   public static var delegate: (any IdentityOrchestration.TSIdoDelegate)? {
     get
     set(newDelegate)
@@ -127,8 +166,13 @@ public protocol TSIdoDelegate : AnyObject {
   public static func initializeSDK(configuration: IdentityOrchestration.TSIdoConfiguration? = nil) throws
   public static func startJourney(journeyId: Swift.String, options: IdentityOrchestration.TSIdoStartJourneyOptions? = nil) throws
   public static func startMobileApproveJourney(payload: [Swift.String : Any], options: IdentityOrchestration.TSIdoStartJourneyOptions? = nil) throws
-  public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil) throws
+  public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil, handleInstruction: IdentityOrchestration.TSIdo.TSSDKInstructionsCallback? = nil) throws
   public static func generateDebugPin(_ completion: @escaping IdentityOrchestration.TSIdoGenerateDebugPinCompletion) throws
   public static func setPushToken(_ token: Swift.String) throws
   @objc deinit
 }
+extension IdentityOrchestration.TSIdoEncryptionMode : Swift.Equatable {}
+extension IdentityOrchestration.TSIdoEncryptionMode : Swift.Hashable {}
+extension IdentityOrchestration.TSIdoInstructionType : Swift.Equatable {}
+extension IdentityOrchestration.TSIdoInstructionType : Swift.Hashable {}
+extension IdentityOrchestration.TSIdoInstructionType : Swift.RawRepresentable {}
