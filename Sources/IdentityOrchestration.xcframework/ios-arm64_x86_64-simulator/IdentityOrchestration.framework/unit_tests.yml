@@ -1,0 +1,100 @@
+name: Unit Tests
+
+on:
+  pull_request:
+    branches: [ develop ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run Unit Tests
+    runs-on:
+      group: macos-group
+    env:
+      CHECKOUT_PATH: "ido-ios-sdk"
+      XCRESULT_FILE_PATH: "build/test_output.xcresult"
+      TESTS_OUTPUT: "build/test_output"
+      PROJECT_NAME: "IdentityOrchestration.xcodeproj"
+      TEST_SCHEMA: "IdentityOrchestrationTestsCI"
+      COVERAGE_JSON_FILE: "build/coverage.json"
+      COVERAGE_THRESHOLD: "58.0"
+      
+    steps:
+    - name: Get Transmits GitHub App token
+      id: app-token
+      uses: getsentry/action-github-app-token@v2.0.0
+      with:
+        app_id: ${{secrets.DEVOPS_CI_APP_ID}}
+        private_key: ${{secrets.DEVOPS_CI_PRIVATE_KEY}}
+        
+    - name: Checkout ido-ios-sdk repository
+      uses: actions/checkout@v4
+      with:
+        repository: transmitsecurity-dev/identity-orchestration-ios-sdk
+        token: ${{steps.app-token.outputs.token}}
+        path: ${{env.CHECKOUT_PATH}}
+        clean: true
+        
+    - name: Find available iOS simulator
+      id: available_simulator
+      run: |
+        IPHONE_UDID=$(xcrun simctl list devices available | grep -i "iphone" | head -1 | grep -o -E '[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}')
+        echo "simulator_udid=$IPHONE_UDID" >> $GITHUB_OUTPUT
+                
+    - name: Run tests
+      env:
+        SIMULATOR_UDID: "${{steps.available_simulator.outputs.simulator_udid}}"
+      run: |
+        cd $CHECKOUT_PATH
+        echo "Running tests on iPhone simulator: $SIMULATOR_UDID"
+        xcodebuild test \
+        -project $PROJECT_NAME \
+        -scheme $TEST_SCHEMA \
+        -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
+        -derivedDataPath build/derived_data \
+        -enableCodeCoverage YES \
+        -resultBundlePath $TESTS_OUTPUT
+        
+    - name: Generate coverage JSON
+      run: |
+        cd $CHECKOUT_PATH
+        xcrun xccov view --report --json $XCRESULT_FILE_PATH > $COVERAGE_JSON_FILE
+        
+    - name: Extract coverage percentage
+      id: coverage
+      run: |
+        cd $CHECKOUT_PATH
+        COVERAGE=$(jq -r '.lineCoverage' $COVERAGE_JSON_FILE)
+        COVERAGE_PERCENT=$(echo "$COVERAGE * 100" | bc -l | xargs printf "%.2f")
+        echo "percentage=$COVERAGE_PERCENT" >> $GITHUB_OUTPUT
+        echo "Coverage: ${COVERAGE_PERCENT}%"
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: |
+          ${{env.CHECKOUT_PATH}}/${{env.XCRESULT_FILE_PATH}}
+          ${{env.CHECKOUT_PATH}}/${{env.COVERAGE_JSON_FILE}}
+        retention-days: 14
+
+    - name: Check coverage threshold
+      run: |
+        cd $CHECKOUT_PATH
+        COVERAGE=${{steps.coverage.outputs.percentage}}
+        THRESHOLD=$COVERAGE_THRESHOLD
+        echo "Checking if coverage meets threshold..."
+        echo "Current coverage: ${COVERAGE}%"
+        echo "Required threshold: ${THRESHOLD}%"
+        COMPARISON=$(echo "$COVERAGE < $THRESHOLD" | bc -l)
+        if [ "$COMPARISON" -eq 1 ]; 
+        then
+          echo "ERROR: Code coverage is below the minimum threshold!"
+          exit 1
+        else
+          echo "✅ Code coverage is above the minimum threshold"
+        fi
+
+
+
+

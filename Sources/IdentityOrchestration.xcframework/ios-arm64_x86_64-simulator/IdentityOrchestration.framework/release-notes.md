@@ -11,6 +11,56 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.22 - December 2025
+### Content
+#### New Features
+1. TSCoreSDK minimum dependency version updated to 1.0.36.
+
+## 1.1.21 - October 2025
+### Content
+#### Bug Fixes 
+1. TSCoreSDK minimum dependency version updated to 1.0.35.
+
+## 1.1.20 - October 2025
+### Content
+#### Bug Fixes
+1. pushOTPAuthentication action renamed to genericOTPAuthentication.
+
+## 1.1.19 - October 2025
+### Content
+#### New Features
+1. Generic OTP authentication support added.
+
+## 1.1.18 - September 2025
+### Content
+#### New Features
+1. Selfie Acquisition support added.
+2. OTP validation support added.
+3. PIN deletion support added.
+
+## 1.1.17 - July 2025
+### Content
+#### New Features
+1. Support multiple APN configurations based on the bundle identifier sent by the SDK in the device header.
+#### Bug Fixes
+1. Fix an issue where the user’s journey would loop after registering a PIN.
+
+## 1.1.16 - June 2025
+### Content
+#### Bug Fixes
+1. Fixed a bug where an error was thrown when a journey was rejected at startup.
+2. Fixed a bug where response JSON keys were converted to snake_case instead of retaining their original casing.
+
+## 1.1.15 - May 2025
+### Content
+#### New Features
+1. Added support for pin authentication.
+
+## 1.1.14 - March 2025
+### Content
+#### New Features
+1. Added support for double encryption.
+
 ## 1.1.13 - March 2025
 ### Content
 #### New Features
