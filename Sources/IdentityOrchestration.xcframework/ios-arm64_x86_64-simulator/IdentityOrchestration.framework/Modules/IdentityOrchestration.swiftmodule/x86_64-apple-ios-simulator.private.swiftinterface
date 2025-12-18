@@ -170,6 +170,7 @@ public protocol TSIdoDelegate : AnyObject {
   public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil, handleInstruction: IdentityOrchestration.TSIdo.TSSDKInstructionsCallback? = nil) throws
   public static func generateDebugPin(_ completion: @escaping IdentityOrchestration.TSIdoGenerateDebugPinCompletion) throws
   public static func setPushToken(_ token: Swift.String) throws
+  public static func resetDeviceKey() async throws
   @objc deinit
 }
 extension IdentityOrchestration.TSIdoEncryptionMode : Swift.Equatable {}
