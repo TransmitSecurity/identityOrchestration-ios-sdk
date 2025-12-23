@@ -5702,6 +5702,29 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetDeviceKey",
+            "printedName": "resetDeviceKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21IdentityOrchestration5TSIdoC14resetDeviceKeyyyYaKFZ",
+            "mangledName": "$s21IdentityOrchestration5TSIdoC14resetDeviceKeyyyYaKFZ",
+            "moduleName": "IdentityOrchestration",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -6913,14 +6936,14 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 2113,
+      "offset": 2157,
       "length": 21,
       "value": "\"default_application\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/IdentityOrchestration\/Implementation\/IdentityOrchestrationController.swift",
       "kind": "StringLiteral",
-      "offset": 15549,
+      "offset": 17127,
       "length": 13,
       "value": "\"auth_req_id\""
     },
@@ -7333,21 +7356,21 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 6257,
+      "offset": 6258,
       "length": 9,
       "value": "\"flow_id\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 6833,
+      "offset": 6834,
       "length": 16,
       "value": "\"mobile_approve\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-demo-app\/identity-orchestration-ios-sdk\/Networking\/Requests\/Base Request\/ClientResponseBody.swift",
       "kind": "StringLiteral",
-      "offset": 7174,
+      "offset": 7175,
       "length": 19,
       "value": "\"drs_session_token\""
     }
