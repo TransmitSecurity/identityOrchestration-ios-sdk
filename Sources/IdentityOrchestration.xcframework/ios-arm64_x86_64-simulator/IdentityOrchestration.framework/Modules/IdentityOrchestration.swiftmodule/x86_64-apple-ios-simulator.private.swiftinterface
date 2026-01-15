@@ -20,7 +20,8 @@ public struct TSIdoInitJourneyOptions {
   public let resource: Swift.String?
   public let pollingTimeout: Swift.Int?
   public let locale: Swift.String?
-  public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil)
+  public let collectRiskData: Swift.Bool?
+  public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil, collectRiskData: Swift.Bool? = false)
 }
 public enum TSIdoEncryptionMode {
   case full

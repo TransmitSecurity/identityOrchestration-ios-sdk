@@ -11,6 +11,11 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.1.23 - January 2026
+### Content
+#### New Features
+1. Collecting risk data upon journey startup.
+
 ## 1.1.22 - December 2025
 ### Content
 #### New Features
