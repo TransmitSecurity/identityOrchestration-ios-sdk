@@ -11,6 +11,16 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 2.0.0 - February 2026
+### Content
+#### New Features
+1. Swift 6 support.
+
+## 1.1.23 - January 2026
+### Content
+#### New Features
+1. Collecting risk data upon journey startup.
+
 ## 1.1.22 - December 2025
 ### Content
 #### New Features

@@ -14,7 +14,7 @@ let package = Package(
             targets: ["IdentityOrchestration", "IdentityOrchestration-Dependencies"])
     ],
     dependencies: [
-        .package(url: "https://github.com/TransmitSecurity/core-ios-sdk.git", from: "1.0.36")
+        .package(url: "https://github.com/TransmitSecurity/core-ios-sdk.git", from: "2.0.0")
     ],
     targets: [
         .binaryTarget(
