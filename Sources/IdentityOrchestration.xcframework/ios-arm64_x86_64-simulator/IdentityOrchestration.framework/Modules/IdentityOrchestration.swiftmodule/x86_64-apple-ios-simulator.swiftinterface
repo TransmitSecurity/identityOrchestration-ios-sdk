@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IdentityOrchestration
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name IdentityOrchestration
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
 import Foundation
@@ -20,7 +20,8 @@ public struct TSIdoInitJourneyOptions {
   public let resource: Swift.String?
   public let pollingTimeout: Swift.Int?
   public let locale: Swift.String?
-  public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil)
+  public let collectRiskData: Swift.Bool?
+  public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil, collectRiskData: Swift.Bool? = false)
 }
 public enum TSIdoEncryptionMode {
   case full
@@ -31,7 +32,7 @@ public enum TSIdoEncryptionMode {
     get
   }
 }
-public struct TSIdoStartJourneyOptions {
+public struct TSIdoStartJourneyOptions : @unchecked Swift.Sendable {
   public let additionalParams: [Swift.String : Any]?
   public let flowId: Swift.String?
   public let encryptionMode: IdentityOrchestration.TSIdoEncryptionMode
@@ -55,7 +56,7 @@ public enum TSIdoJourneyError : Swift.Error {
   case missingRequestIdInApprovalPayload
   case internalError(IdentityOrchestration.IdoError)
 }
-public struct TSIdoSdkError : Swift.Error {
+public struct TSIdoSdkError : Swift.Error, @unchecked Swift.Sendable {
   public let errorCode: IdentityOrchestration.TSIdoJourneyError
   public let description: Swift.String
   public let data: Any?
@@ -68,7 +69,7 @@ extension IdentityOrchestration.TSIdoClientResponseOptionType {
 extension IdentityOrchestration.TSIdoClientResponseOptionType : Swift.Equatable {
   public static func == (lhs: IdentityOrchestration.TSIdoClientResponseOptionType, rhs: IdentityOrchestration.TSIdoClientResponseOptionType) -> Swift.Bool
 }
-public enum TSIdoClientResponseOptionType : Swift.Codable {
+public enum TSIdoClientResponseOptionType : Swift.Codable, @unchecked Swift.Sendable {
   case clientInput
   case cancel
   case fail
@@ -142,7 +143,7 @@ public enum TSIdoInstructionType : Swift.String, Swift.Codable {
     get
   }
 }
-public struct TSIdoInstruction : Swift.Codable {
+public struct TSIdoInstruction : Swift.Codable, @unchecked Swift.Sendable {
   public let type: IdentityOrchestration.TSIdoInstructionType
   public let stepId: Swift.String
   public let data: [Swift.String : Any]
