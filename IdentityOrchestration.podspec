@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     #
   
     spec.name         = "IdentityOrchestration"
-    spec.version      = "1.1.22"
+    spec.version      = "0.1.8011"
     spec.summary      = "The Identity Orchestration SDK is a client-side JavaScript SDK that allows you to communicate with the Orchestration server, run journeys, and submit client input. Contact your Transmit representative to learn more about our orchestration capabilities."
     spec.homepage     = "https://www.transmitsecurity.co.il"
   
@@ -134,6 +134,6 @@ Pod::Spec.new do |spec|
     # spec.requires_arc = true
   
     # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    spec.dependency "TSCoreSDK", "~> 1.0.39"
+    spec.dependency "TSCoreSDK", "~> 1.1.2"
     
   end
