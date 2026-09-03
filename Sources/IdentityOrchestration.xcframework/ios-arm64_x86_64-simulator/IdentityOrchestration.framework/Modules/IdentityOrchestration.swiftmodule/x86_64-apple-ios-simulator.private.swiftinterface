@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IdentityOrchestration
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name IdentityOrchestration
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
 import Foundation
@@ -12,6 +12,14 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
+public typealias TSHandlerCallback<Input, Output> = (Input) -> Output
+public protocol ITSIdoStepHandler {
+  associatedtype Input
+  associatedtype Output
+  var onBefore: IdentityOrchestration.TSHandlerCallback<Self.Input, Self.Output>? { get set }
+  var onAfter: IdentityOrchestration.TSHandlerCallback<Self.Input, Self.Output>? { get set }
+}
+public typealias TSHookHandler<Input, Output> = (@Sendable (Input) -> Output)
 public struct TSIdoConfiguration {
   public init(configurationFileName: Swift.String)
 }
@@ -20,7 +28,8 @@ public struct TSIdoInitJourneyOptions {
   public let resource: Swift.String?
   public let pollingTimeout: Swift.Int?
   public let locale: Swift.String?
-  public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil)
+  public let collectRiskData: Swift.Bool?
+  public init(serverPath: Swift.String, resource: Swift.String? = nil, pollingTimeout: Swift.Int? = nil, locale: Swift.String? = nil, collectRiskData: Swift.Bool? = false)
 }
 public enum TSIdoEncryptionMode {
   case full
@@ -31,16 +40,31 @@ public enum TSIdoEncryptionMode {
     get
   }
 }
-public struct TSIdoStartJourneyOptions {
+public struct TSIdoStartJourneyOptions : @unchecked Swift.Sendable {
   public let additionalParams: [Swift.String : Any]?
   public let flowId: Swift.String?
+  public let drsSessionToken: Swift.String?
   public let encryptionMode: IdentityOrchestration.TSIdoEncryptionMode
-  public init(additionalParams: [Swift.String : Any]? = nil, flowId: Swift.String? = nil, encryptionMode: IdentityOrchestration.TSIdoEncryptionMode = .none)
+  public init(additionalParams: [Swift.String : Any]? = nil, flowId: Swift.String? = nil, drsSessionToken: Swift.String? = nil, encryptionMode: IdentityOrchestration.TSIdoEncryptionMode = .none)
 }
-public struct IdoError : Swift.Error {
+public struct IdoError : Swift.Error, Swift.Equatable {
+  public static func == (a: IdentityOrchestration.IdoError, b: IdentityOrchestration.IdoError) -> Swift.Bool
 }
 extension IdentityOrchestration.IdoError {
   public static let cryptoSessionMissingRequestParameter: IdentityOrchestration.IdoError
+}
+extension IdentityOrchestration.IdoError {
+  public struct IDVError : Swift.Equatable {
+    public static let cameraPermissionRequired: IdentityOrchestration.IdoError
+    public static let sdkDisabled: IdentityOrchestration.IdoError
+    public static let sessionNotValid: IdentityOrchestration.IdoError
+    public static let initializationError: IdentityOrchestration.IdoError
+    public static let notInitialized: IdentityOrchestration.IdoError
+    public static let canceled: IdentityOrchestration.IdoError
+    public static let internalError: IdentityOrchestration.IdoError
+    public static let notAvailable: IdentityOrchestration.IdoError
+    public static func == (a: IdentityOrchestration.IdoError.IDVError, b: IdentityOrchestration.IdoError.IDVError) -> Swift.Bool
+  }
 }
 public enum TSIdoJourneyError : Swift.Error {
   case notInitialized
@@ -55,7 +79,7 @@ public enum TSIdoJourneyError : Swift.Error {
   case missingRequestIdInApprovalPayload
   case internalError(IdentityOrchestration.IdoError)
 }
-public struct TSIdoSdkError : Swift.Error {
+public struct TSIdoSdkError : Swift.Error, @unchecked Swift.Sendable {
   public let errorCode: IdentityOrchestration.TSIdoJourneyError
   public let description: Swift.String
   public let data: Any?
@@ -68,7 +92,7 @@ extension IdentityOrchestration.TSIdoClientResponseOptionType {
 extension IdentityOrchestration.TSIdoClientResponseOptionType : Swift.Equatable {
   public static func == (lhs: IdentityOrchestration.TSIdoClientResponseOptionType, rhs: IdentityOrchestration.TSIdoClientResponseOptionType) -> Swift.Bool
 }
-public enum TSIdoClientResponseOptionType : Swift.Codable {
+public enum TSIdoClientResponseOptionType : Swift.Codable, @unchecked Swift.Sendable {
   case clientInput
   case cancel
   case fail
@@ -116,7 +140,10 @@ public enum TSIdoJourneyActionType : Swift.Codable {
   case nativeBiometricsTransactionSigning
   case pinCodeRegistration
   case pinCodeAuthentication
+  case pinCodeTransactionSigning
   case pinCodeDeletion
+  case documentAcquisition
+  case idvRecommendation
   case custom(name: Swift.String)
 }
 public protocol TSIdoClientResponseOption : Swift.Decodable, Swift.Encodable {
@@ -131,6 +158,7 @@ public protocol TSIdoServiceResponse {
   var journeyStepId: IdentityOrchestration.TSIdoJourneyActionType? { get }
   var clientResponseOptions: [Swift.String : any IdentityOrchestration.TSIdoClientResponseOption]? { get }
   var token: Swift.String? { get }
+  var code: Swift.String? { get }
 }
 public typealias TSIdoGenerateDebugPinCompletion = (Swift.Result<Swift.String, IdentityOrchestration.TSIdoJourneyError>) -> Swift.Void
 public enum TSIdoInstructionType : Swift.String, Swift.Codable {
@@ -142,12 +170,28 @@ public enum TSIdoInstructionType : Swift.String, Swift.Codable {
     get
   }
 }
-public struct TSIdoInstruction : Swift.Codable {
+public struct TSIdoInstruction : Swift.Codable, @unchecked Swift.Sendable {
   public let type: IdentityOrchestration.TSIdoInstructionType
   public let stepId: Swift.String
   public let data: [Swift.String : Any]
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public class TSIDVStepHandler : IdentityOrchestration.ITSIdoStepHandler, @unchecked Swift.Sendable {
+  public typealias Input = any IdentityOrchestration.TSIDVAcquisitionContext
+  public typealias Output = Swift.Void
+  public var onBefore: IdentityOrchestration.TSHandlerCallback<IdentityOrchestration.TSIDVStepHandler.Input, IdentityOrchestration.TSIDVStepHandler.Output>?
+  public var onAfter: IdentityOrchestration.TSHandlerCallback<IdentityOrchestration.TSIDVStepHandler.Input, IdentityOrchestration.TSIDVStepHandler.Output>?
+  public init()
+  @objc deinit
+}
+public protocol ITSUIHandler {
+  func provideDocumentAcquisitionHandler() -> IdentityOrchestration.TSIDVStepHandler
+  func provideSelfieAcquisitionHandler() -> IdentityOrchestration.TSIDVStepHandler
+}
+extension IdentityOrchestration.ITSUIHandler {
+  public func provideDocumentAcquisitionHandler() -> IdentityOrchestration.TSIDVStepHandler
+  public func provideSelfieAcquisitionHandler() -> IdentityOrchestration.TSIDVStepHandler
 }
 extension Swift.Encodable {
   public var toDictionary: [Swift.String : Any]? {
@@ -156,6 +200,24 @@ extension Swift.Encodable {
 }
 public protocol TSIdoDelegate : AnyObject {
   func TSIdoDidReceiveResult(_ result: Swift.Result<any IdentityOrchestration.TSIdoServiceResponse, IdentityOrchestration.TSIdoJourneyError>)
+}
+public protocol TSIdoStepContext : Swift.Sendable {
+  associatedtype TSIdoStepData
+  var data: Self.TSIdoStepData { get }
+  func proceed() throws
+  func submit(option: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]?) throws
+}
+public struct TSAcquisitionStepData {
+  public let acquisitionId: Swift.String?
+  public let startToken: Swift.String?
+  public let state: Swift.String?
+  public let baseEndpoint: Swift.String?
+  public let responseOptions: [any IdentityOrchestration.TSIdoClientResponseOption]?
+  public init(acquisitionId: Swift.String?, startToken: Swift.String?, state: Swift.String?, baseEndpoint: Swift.String?, responseOptions: [any IdentityOrchestration.TSIdoClientResponseOption]?)
+}
+public struct TSVerificationInfo {
+}
+public protocol TSIDVAcquisitionContext : IdentityOrchestration.TSIdoStepContext where Self.TSIdoStepData == IdentityOrchestration.TSAcquisitionStepData {
 }
 @_hasMissingDesignatedInitializers final public class TSIdo : TSCoreSDK.TSLogConfigurable {
   public typealias TSSDKInstructionsCallback = (IdentityOrchestration.TSIdoInstruction) -> Swift.Void
@@ -170,6 +232,7 @@ public protocol TSIdoDelegate : AnyObject {
   public static func submitClientResponse(clientResponseOptionId: IdentityOrchestration.TSIdoClientResponseOptionType, data: [Swift.String : Any]? = nil, handleInstruction: IdentityOrchestration.TSIdo.TSSDKInstructionsCallback? = nil) throws
   public static func generateDebugPin(_ completion: @escaping IdentityOrchestration.TSIdoGenerateDebugPinCompletion) throws
   public static func setPushToken(_ token: Swift.String) throws
+  public static func setUIHandler(_ provider: any IdentityOrchestration.ITSUIHandler) throws
   @objc deinit
 }
 extension IdentityOrchestration.TSIdoEncryptionMode : Swift.Equatable {}

@@ -11,6 +11,38 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+
+## 1.2.3 - September 2026
+### Content
+#### New Features
+1. Modular IDV: support in hook-based API for document and selfie acquisitions. 
+
+## 1.2.2 - July 2026
+### Content
+#### New Features
+1. Added support for PIN code transaction signing journey action type.
+#### Bug Fixes
+2. The backend token exchange code returned upon successful Journey completion was dropped while parsing the server response, and never reached the integrating app. It is now exposed as `TSIdoServiceResponse.code`.
+### Upgrade
+#### EXPECTED MIGRATION CHANGES
+3. `TSIdoServiceResponse` has a new `code` property. Types conforming to this protocol outside of the SDK must implement it.
+4. Added support for passing a DRS session token via the Start Journey parameters.
+
+## 1.2.1 - February 2026
+### Content
+#### New Features
+1. Enhancements and optimizations.
+
+## 1.2.0 - February 2026
+### Content
+#### New Features
+1. Swift 6 support.
+
+## 1.1.23 - January 2026
+### Content
+#### New Features
+1. Collecting risk data upon journey startup.
+
 ## 1.1.22 - December 2025
 ### Content
 #### New Features
