@@ -11,6 +11,54 @@ Template
 #### EXPECTED MIGRATION CHANGES 
 --->
 
+## 1.2.5 - October 2026
+### Content
+#### New Features
+1. Modular IDV: support for a server-driven cancel/close button during document and selfie acquisition.
+2. `IdoError.errorCode` and `IdoError.errorMessage` are now public.
+#### Bug Fixes
+3. Modular IDV: prevent a crash when an `IdentityVerification` version older than 1.3.5 is linked.
+4. Modular IDV: initialization and acquisition start errors are now reported via the journey error callback.
+
+## 1.2.4 - September 2026
+### Content
+#### New Features
+1. Added support for Save Data in SDK journey step.
+2. Added support for Delete Data from SDK journey step.
+3. Saved data is limited to 30KB in total; a save that would exceed the limit is rejected and existing data is kept.
+4. Saved data is cleared on the device registration journey step.
+
+## 1.2.3 - September 2026
+### Content
+#### New Features
+1. Modular IDV: support in hook-based API for document and selfie acquisitions. 
+
+## 1.2.2 - July 2026
+### Content
+#### New Features
+1. Added support for PIN code transaction signing journey action type.
+#### Bug Fixes
+2. The backend token exchange code returned upon successful Journey completion was dropped while parsing the server response, and never reached the integrating app. It is now exposed as `TSIdoServiceResponse.code`.
+### Upgrade
+#### EXPECTED MIGRATION CHANGES
+3. `TSIdoServiceResponse` has a new `code` property. Types conforming to this protocol outside of the SDK must implement it.
+4. Added support for passing a DRS session token via the Start Journey parameters.
+
+## 1.2.1 - February 2026
+### Content
+#### New Features
+1. Enhancements and optimizations.
+
+## 1.2.0 - February 2026
+### Content
+#### New Features
+1. Swift 6 support.
+
+## 1.1.23 - January 2026
+### Content
+#### New Features
+1. Collecting risk data upon journey startup.
+
 ## 1.1.22 - December 2025
 ### Content
 #### New Features
